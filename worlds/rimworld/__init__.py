@@ -2,7 +2,6 @@
 
 import logging
 import pkgutil
-import random
 import settings
 import typing
 import xml.etree.ElementTree as ElementTree
@@ -191,7 +190,7 @@ class RimworldWorld(World):
                     player_name = self.multiworld.get_player_name(item.player)
                     fake_trap_options.append(player_name + "," + item.name)
 
-            random.shuffle(fake_trap_options)
+            self.random.shuffle(fake_trap_options)
             del fake_trap_options[50:]
             slot_data["fake_trap_options"] = fake_trap_options
 
@@ -299,7 +298,7 @@ class RimworldWorld(World):
             locationName = "Craft Location " + str(i)
             locationId = self.location_name_to_id[locationName]
 
-            randomWeight = random.randrange(total_weight)
+            randomWeight = self.random.randrange(total_weight)
             for itemId in item_weights:
                 if randomWeight < item_weights[itemId]:
                     itemId1 = itemId
@@ -309,7 +308,7 @@ class RimworldWorld(World):
                     randomWeight -= item_weights[itemId]
 
             # Allows duplicate items - maybe fix it? Maybe who cares?
-            randomWeight = random.randrange(total_weight)
+            randomWeight = self.random.randrange(total_weight)
             for itemId in item_weights:
                 if randomWeight < item_weights[itemId]:
                     itemId2 = itemId
@@ -373,7 +372,7 @@ class RimworldWorld(World):
             main_region.locations.append(RimworldLocation(self.player, "Monument Victory", None, main_region))
             otherBuildingCount = getattr(self.options, "MonumentOtherBuildingRequirementCount").value
             for _ in range(otherBuildingCount):
-                requiredBuilding = random.choice(possibleBuildings)
+                requiredBuilding = self.random.choice(possibleBuildings)
                 possibleBuildings.remove(requiredBuilding)
                 self.monument_data[self.player]["MonumentBuildings"][requiredBuilding] = 1
                 for prereq in self.building_name_to_prereqs[requiredBuilding]:
@@ -458,7 +457,7 @@ class RimworldWorld(World):
             logger.warning("Player " + self.player_name + " had " + str(self.item_counts[self.player]) + " items, but " + str(self.location_counts[self.player]) + " locations! Adding filler.")
             while self.item_counts[self.player] < self.location_counts[self.player]:
                 self.item_counts[self.player] += 1
-                if random.randrange(100) < trapRandomChance:
+                if self.random.randrange(100) < trapRandomChance:
                     self.multiworld.itempool.append(self.create_item("Enemy Raid", ItemClassification.trap))
                 else:
                     self.multiworld.itempool.append(self.create_item("Ship Chunk Drop", ItemClassification.filler))
