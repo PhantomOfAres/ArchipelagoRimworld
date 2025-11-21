@@ -466,7 +466,7 @@ class RimworldWorld(World):
             logger.warning("Player " + self.player_name + " had " + str(self.item_counts[self.player]) + " items, but " + str(self.location_counts[self.player]) + " locations! Adding basic research as filler.")
             main_region = self.multiworld.get_region("Main", self.player)
             basicResearchLocationCount = getattr(self.options, "BasicResearchLocationCount").value
-            i = 1
+            i = 0
             location_pool: Dict[str, int] = {}
             self.basic_research_counts[self.player] = basicResearchLocationCount
             while self.item_counts[self.player] > self.location_counts[self.player] + len(location_pool):
