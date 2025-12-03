@@ -4,11 +4,11 @@
 * Latest release of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
 * The `rimworld.apworld` from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release.
 * The `Harmony` mod, which can be downloaded from the workshop [here](https://steamcommunity.com/workshop/filedetails/?id=2009463077)
-* The `ArchipelagoRimworld.zip` mod file from the [Rimworld Archipelago Client](https://github.com/PhantomOfAres/RimworldArchipelagoClient)
+* The `RimworldArchipelagoClient<version>.zip` mod file from the [Rimworld Archipelago Client](https://github.com/PhantomOfAres/RimworldArchipelagoClient)
     * Workshop support coming soon!
-* A legal copy of RimWorld, on version 1.5 or later.
+* A legal copy of RimWorld, on version 1.6 or later.
     * Only tested on Steam version.
-    * All expansions up to Anomaly are currently supported.
+    * All expansions up to Odyssey are currently supported.
     * Additional mods are not guaranteed to work, but if you're interested, see `Advanced Setup` at the end of this guide.
 
 ## Installing the Archipelago Mod to RimWorld
@@ -21,7 +21,7 @@
 
 ## Generating and Hosting a Seed
 * If you are unfamiliar with Archipelago, I recommend reading through the [Archipelago Setup Guide](https://archipelago.gg/tutorial/Archipelago/setup/en) to gain an understanding of how Archipelago works and to better understand the steps below.
-1. Download the `rimworld.apworld` and `Rimworld.yaml` files from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release.
+1. Download the `rimworld.apworld` and `yaml` files from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release. Note: There are multiple sample yaml files, depending on whether you own DLCs. Both can be edited as desired.
 2. Put the `rimworld.apworld` file in the `Archipelago/custom_worlds` directory.
 3. Edit `Rimworld.yaml`
     1. Take a look at all of the options in the yaml file, and adjust them as desired. Take special note of the `expansion_enabled` settings if you don't own or would like to exclude certain expansioins.
