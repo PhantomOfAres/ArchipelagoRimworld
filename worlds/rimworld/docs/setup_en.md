@@ -14,7 +14,7 @@
 ## Installing the Archipelago Mod to RimWorld
 1. Navigate to the install folder for Rimworld (right-click RimWorld in Steam, click Properties -> Installed Files -> Browse)
 2. Open the Mods folder
-3. Extract the contents of `ArchipelagoRimworld.zip` into the Mods folder - there should now be a RimworldArchipelago folder alongside the "Place mods here.text" file in the Mods folder.
+3. Extract the contents of `ArchipelagoRimworldClient.zip` into the Mods folder - there should now be a RimworldArchipelago folder alongside the "Place mods here.text" file in the Mods folder.
 4. Open RimWorld
 5. Click the "Mods" button from the main menu
 6. Enable the Harmony mod, and the Archipelago mod. The Harmony mod must be at the top of the list, and the Archipelago mod should be below all of the base game files (Core, Royalty, Ideology, etc.) You can use the Auto-Sort button to resolve this order.
@@ -46,7 +46,7 @@ This mod has been designed to attempt to support future expansions as well as mo
 3. Open Options -> Mod options -> Archipelago
 4. Click the `Extract Ap Data` button. This wil export all of the game's data into a format that both the generator/server and the client can read. It will be saved in the user's Documents folder (note that modernly, there are two Documents folders, one connected to OneDrive, and one local - it's in the local one.)
 5. Send the ArchipelagoItemDefs.xml file to all Rimworld players in this multiworld.
-6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/1.5/Defs`) - it will overwrite the existing xml file.
+6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/Defs`) - it will overwrite the existing xml file.
 7. Open the apworld file (it's a zip file - it can be opened with anything that can open a zip file.)
 8. Replace the `ArchipelagoItemDefs.xml` in the apworld with the new xml file.
 9. If multiple people in the same multiworld are using different sets of mods, each player must exclude the items from the other mods from their yamls. (Soon, there will be a way to do this directly. As a workaround, you should be able to exclude the locations and items from other mods - you'll have to go digging through `ArchipelagoItemDefs.xml` to find them - it should include the source mod for all items.)
