@@ -134,7 +134,6 @@ class RabbitAndSteelWorld(World):
                 kingdom_order[kingdom] = -1
 
     def fill_slot_data(self) -> Dict[str, Any]:
-        raise OptionError(f"Player {self.player_name} needs to kill Shira more times than available classes")
         return self.options.as_dict(
             "kingdom_sanity", "max_kingdoms_per_run", "progressive_regions", "excluded_kingdoms",
             "kingdom_sanity_kingdom_order", "kingdom_order", "class_sanity", "checks_per_class", "shuffle_item_sets",
