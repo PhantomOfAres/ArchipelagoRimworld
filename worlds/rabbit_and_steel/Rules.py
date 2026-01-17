@@ -335,15 +335,6 @@ def set_all_entrance_rules(world: RabbitAndSteelWorld) -> None:
 
 
 def set_all_location_rules(world: RabbitAndSteelWorld) -> None:
-    if world.options.class_sanity:
-        starting_class = world.get_location("Starting Class")
-        starting_class.progress_type = LocationProgressType.PRIORITY
-
-        add_item_rule(
-            starting_class,
-            lambda item: item.player == world.player and item.is_type("Classes")
-        )
-
     if world.options.goal_condition == world.options.goal_condition.option_shira:
         for class_name in Items.class_names:
             if class_name in world.options.exclude_class:

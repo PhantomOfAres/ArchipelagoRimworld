@@ -37,6 +37,8 @@ class RabbitAndSteelWorld(World):
         "ShiraVictory": Items.shira_defeat_names,
     }
 
+    starting_class_name = ""
+
     def create_regions(self) -> None:
         Regions.create_and_connect_regions(self)
         Locations.create_all_locations(self)
@@ -126,6 +128,10 @@ class RabbitAndSteelWorld(World):
         if ((self.options.progressive_regions and not self.options.kingdom_sanity) or
                 (self.options.kingdom_sanity and self.options.kingdom_sanity_kingdom_order)):
             self.assign_kingdom_order()
+
+        if self.options.class_sanity:
+            self.starting_class_name = self.random.choice(tuple(class_names - set(self.options.exclude_class)))
+            self.multiworld.push_precollected(self.create_item_with_type(self.starting_class_name, "Classes"))
 
         kingdom_order = self.options.kingdom_order.value
         excluded_kingdoms = self.options.excluded_kingdoms.value

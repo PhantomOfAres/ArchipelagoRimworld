@@ -19,12 +19,6 @@ def create_all_locations(world: RabbitAndSteelWorld) -> None:
 
 
 def create_regular_locations(world: RabbitAndSteelWorld) -> None:
-    lobby = world.get_region("Lobby")
-    lobby_locations = {}
-    if world.options.class_sanity:
-        lobby_locations["Starting Class"] = starting_inventory_table["Starting Class"]
-    lobby.add_locations(lobby_locations, RabbitAndSteelLocation)
-
     kingdom_outskirts = world.get_region("Kingdom Outskirts")
     kingdom_outskirts.add_locations(kingdom_outskirts_table, RabbitAndSteelLocation)
 
@@ -96,19 +90,9 @@ def create_events(world: RabbitAndSteelWorld) -> None:
 
 location_id = 1
 
-# Locations that should be awarded after connection, to ensure Kingdom Outskirts is reachable
-starting_locations = ["Starting Class",
-                      # "Starting Kingdom", "Starting Primary", "Starting Secondary",
-                      # "Starting Special", "Starting Defensive"
-                      ]
-starting_inventory_table = {}
-for location in starting_locations:
-    starting_inventory_table[location] = location_id
-    location_id += 1
-
 # Locations that should be awarded during the run through Kingdom Outskirts
-outskirts_locations = ["Kingdom Outskirts Battle 1", "Kingdom Outskirts Chest 1", "Kingdom Outskirts Battle 2",
-                       "Kingdom Outskirts Chest 2", "Kingdom Outskirts Battle 3"]
+outskirts_locations = {"Kingdom Outskirts Battle 1", "Kingdom Outskirts Chest 1", "Kingdom Outskirts Battle 2",
+                       "Kingdom Outskirts Chest 2", "Kingdom Outskirts Battle 3"}
 kingdom_outskirts_table = {}
 for location in outskirts_locations:
     kingdom_outskirts_table[location] = location_id
@@ -116,7 +100,7 @@ for location in outskirts_locations:
 
 # The 5 main kingdoms have the same structure
 # So fill them with the locations that should be awarded during the run through the kingdom
-generic_kingdom_locations = ["Battle 1", "Battle 2", "Battle 3", "Chest", "Boss"]
+generic_kingdom_locations = {"Battle 1", "Battle 2", "Battle 3", "Chest", "Boss"}
 scholars_nest_table = {}
 for location in generic_kingdom_locations:
     scholars_nest_table["Scholar's Nest " + location] = location_id
@@ -148,7 +132,7 @@ kingdom_to_locations = {"Scholar's Nest": scholars_nest_table, "King's Arsenal":
                         "Emerald Lakeside": emerald_lakeside_table}
 
 # Locations that should be awarded during the run through The Pale Keep
-keep_locations = ["The Pale Keep Battle 1", "The Pale Keep Battle 2", "The Pale Keep Battle 3", "The Pale Keep Chest"]
+keep_locations = {"The Pale Keep Battle 1", "The Pale Keep Battle 2", "The Pale Keep Battle 3", "The Pale Keep Chest"}
 pale_keep_table = {}
 for location in keep_locations:
     pale_keep_table[location] = location_id
@@ -161,7 +145,7 @@ moonlit_pinnacle_table = {
 location_id += 1
 
 # Locations that should be awarded for obtaining a specific chest item if chest sanity is on
-item_locations = ["Top Left", "Bottom Left", "Middle", "Top Right", "Bottom Right"]
+item_locations = {"Top Left", "Bottom Left", "Middle", "Top Right", "Bottom Right"}
 
 kingdom_outskirts_chest_locations = ["Kingdom Outskirts Chest 1", "Kingdom Outskirts Chest 2"]
 kingdom_outskirts_chest_item_table = {}
@@ -434,8 +418,8 @@ class_tables = {
     "Ancient": ancient_tables
 }
 
-shop_locations = ["Full Heal Potion Slot", "Level Up Slot", "Potion 1 Slot", "Potion 2 Slot", "Potion 3 Slot",
-                  "Primary Upgrade Slot", "Secondary Upgrade Slot", "Special Upgrade Slot", "Defensive Upgrade Slot"]
+shop_locations = {"Full Heal Potion Slot", "Level Up Slot", "Potion 1 Slot", "Potion 2 Slot", "Potion 3 Slot",
+                  "Primary Upgrade Slot", "Secondary Upgrade Slot", "Special Upgrade Slot", "Defensive Upgrade Slot"}
 global_shop_table = {}
 for location in shop_locations:
     global_shop_table[location] = location_id
@@ -473,11 +457,10 @@ kingdom_to_shop_locations = {"Scholar's Nest": scholars_nest_shop_table,
                              "The Pale Keep": pale_keep_shop_table}
 
 # Dictionary that contains all the locations
-location_table = starting_inventory_table | kingdom_outskirts_table | scholars_nest_table | kings_arsenal_table | \
-                 red_darkhouse_table | churchmouse_streets_table | emerald_lakeside_table | pale_keep_table | \
-                 moonlit_pinnacle_table | kingdom_outskirts_chest_item_table | scholars_nest_chest_item_table | \
-                 kings_arsenal_chest_item_table | red_darkhouse_chest_item_table | churchmouse_streets_chest_item_table | \
-                 emerald_lakeside_chest_item_table | pale_keep_chest_item_table | \
+location_table = kingdom_outskirts_table | scholars_nest_table | kings_arsenal_table | red_darkhouse_table | \
+                 churchmouse_streets_table | emerald_lakeside_table | pale_keep_table | moonlit_pinnacle_table | \
+                 kingdom_outskirts_chest_item_table | scholars_nest_chest_item_table | kings_arsenal_chest_item_table | \
+                 red_darkhouse_chest_item_table | churchmouse_streets_chest_item_table | emerald_lakeside_chest_item_table | pale_keep_chest_item_table | \
                  wizard_outskirts_table | wizard_nest_table | wizard_arsenal_table | \
                  wizard_darkhouse_table | wizard_streets_table | wizard_lakeside_table | wizard_keep_table | \
                  wizard_pinnacle_table | assassin_outskirts_table | assassin_nest_table | assassin_arsenal_table | \
