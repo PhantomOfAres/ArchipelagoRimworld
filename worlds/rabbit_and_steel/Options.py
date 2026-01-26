@@ -97,9 +97,10 @@ class ExcludeClass(OptionSet):
 class ChecksPerClass(OptionSet):
     """What classes should have locations associated with them.
     There will always be a generic location that any class can obtain.
-    Available Options: ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]"""
+    Available Options: ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]
+    _ALL can be used to put checks on all classes"""
     display_name = "Checks Per Class"
-    valid_keys = class_items.keys()
+    valid_keys = class_items.keys() & {"_ALL"}
 
 
 class ShuffleItemSets(Toggle):

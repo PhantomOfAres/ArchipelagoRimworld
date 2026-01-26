@@ -124,61 +124,61 @@ def create_all_items(world: RabbitAndSteelWorld) -> None:
 
 item_id = 1
 
-kingdom_names = {
+kingdom_names = [
     "Scholar's Nest", "King's Arsenal", "Red Darkhouse", "Churchmouse Streets", "Emerald Lakeside", "The Pale Keep",
-    "Moonlit Pinnacle"}
+    "Moonlit Pinnacle"]
 kingdom_items = {}
 for item in kingdom_names:
     kingdom_items[item] = item_id
     item_id += 1
 
-class_names = {"Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender",
-               "Ancient"}
+class_names = ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender",
+               "Ancient"]
 class_items = {}
 for item in class_names:
     class_items[item] = item_id
     item_id += 1
 
-itemset_names = {
+itemset_names = [
     "Arcane Set", "Night Set", "Timespace Set", "Wind Set", "Bloodwolf Set", "Assassin Set", "Rockdragon Set",
     "Flame Set", "Gem Set", "Lightning Set", "Shrine Set", "Lucky Set", "Life Set", "Poison Set", "Depth Set",
     "Darkbite Set", "Timegem Set", "Youkai Set", "Haunted Set", "Gladiator Set", "Sparkblade Set", "Swiftflight Set",
-    "Sacredflame Set", "Ruins Set", "Lakeshrine Set"}
+    "Sacredflame Set", "Ruins Set", "Lakeshrine Set"]
 itemset_items = {}
 for item in itemset_names:
     itemset_items[item] = item_id
     item_id += 1
 
-upgrade_names = {"Emerald Gem", "Garnet Gem", "Ruby Gem", "Sapphire Gem", "Opal Gem"}
+upgrade_names = ["Emerald Gem", "Garnet Gem", "Ruby Gem", "Sapphire Gem", "Opal Gem"]
 upgrade_items = {}
 for item in upgrade_names:
     upgrade_items[item] = item_id
     item_id += 1
 
-specific_upgrade_names = {
+specific_upgrade_names = [
     "Primary Emerald Gem", "Primary Garnet Gem", "Primary Ruby Gem", "Primary Sapphire Gem", "Primary Opal Gem",
     "Secondary Emerald Gem", "Secondary Garnet Gem", "Secondary Ruby Gem", "Secondary Sapphire Gem", "Secondary Opal Gem",
     "Special Emerald Gem", "Special Garnet Gem", "Special Ruby Gem", "Special Sapphire Gem", "Special Opal Gem",
     "Defensive Emerald Gem", "Defensive Garnet Gem", "Defensive Ruby Gem", "Defensive Sapphire Gem",
-    "Defensive Opal Gem"}
+    "Defensive Opal Gem"]
 specific_upgrade_items = {}
 for item in specific_upgrade_names:
     specific_upgrade_items[item] = item_id
     item_id += 1
 
-potion_names = {
+potion_names = [
     "Full Heal Potion", "Level Up Potion", "Regen Potion", "Essence of Spell", "Darkness Potion", "Quickening Potion",
     "Winged Potion", "Essence of Wit", "Swifthand Potion", "Fire Potion", "Strength Potion", "Gold Potion",
-    "Luck Potion", "Essence of Steel", "Evasion Potion", "Longarm Potion", "Vitality Potion"}
+    "Luck Potion", "Essence of Steel", "Evasion Potion", "Longarm Potion", "Vitality Potion"]
 potion_items = {}
 for item in potion_names:
     potion_items[item] = item_id
     item_id += 1
 
-shira_defeat_names = {
+shira_defeat_names = [
     "Victory - Wizard", "Victory - Assassin", "Victory - Heavyblade", "Victory - Dancer", "Victory - Druid",
     "Victory - Spellsword",
-    "Victory - Sniper", "Victory - Bruiser", "Victory - Defender", "Victory - Ancient"}
+    "Victory - Sniper", "Victory - Bruiser", "Victory - Defender", "Victory - Ancient"]
 shira_defeat_items = {}
 for item in shira_defeat_names:
     shira_defeat_items[item] = item_id

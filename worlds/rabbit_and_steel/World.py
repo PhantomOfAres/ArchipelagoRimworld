@@ -4,7 +4,7 @@ from Options import OptionError
 from worlds.AutoWorld import World
 
 from . import Items, Locations, Options, Regions, Rules, Web_world
-from .Items import class_names
+from .Items import class_names, class_items
 
 client_version = 1
 
@@ -113,6 +113,9 @@ class RabbitAndSteelWorld(World):
                 raise OptionError(f"Player {self.player_name} can not reach all valid kingdoms: \n{kingdom_order}")
 
     def generate_early(self) -> None:
+        if self.options.checks_per_class.__contains__("_ALL"):
+            self.options.checks_per_class.value = set(class_items.keys())
+
         shared_classes = list(set(self.options.checks_per_class) & set(self.options.exclude_class))
         if len(shared_classes) != 0:
             raise OptionError(f"Player {self.player_name} is excluding classes, but expects to get checks with the "
@@ -130,7 +133,7 @@ class RabbitAndSteelWorld(World):
             self.assign_kingdom_order()
 
         if self.options.class_sanity:
-            self.starting_class_name = self.random.choice(tuple(class_names - set(self.options.exclude_class)))
+            self.starting_class_name = self.random.choice(tuple(set(class_names) - set(self.options.exclude_class)))
             self.multiworld.push_precollected(self.create_item_with_type(self.starting_class_name, "Classes"))
 
         kingdom_order = self.options.kingdom_order.value
