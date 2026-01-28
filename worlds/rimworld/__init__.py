@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ElementTree
 from typing import Dict
 from .Options import RimworldOptions, max_research_locations, rimworld_options
 from .Items import RimworldItem, any_electricity_items
-from .Locations import RimworldLocation, base_location_id, location_id_gap, generic_victory_requirements, ship_launch_victory_requirements, royalty_victory_requirements, archonexus_victory_requirements, anomaly_victory_requirements
+from .Locations import RimworldLocation, base_location_id, location_id_gap, generic_victory_requirements, ship_launch_victory_requirements, royalty_victory_requirements, archonexus_victory_requirements, anomaly_victory_requirements, raid_tiers, simple_raid_tier_requirements, gun_raid_tier_requirements, better_gun_raid_tier_requirements, spacer_raid_tier_requirements
 from ..generic.Rules import set_rule, add_rule
 from worlds.AutoWorld import World
 from BaseClasses import LocationProgressType, Region, Location, Entrance, Item, ItemClassification
@@ -129,6 +129,12 @@ class RimworldWorld(World):
         locationId = i + baseLocationId
         location_name_to_id[locationName] = locationId
 
+    baseLocationId = baseLocationId + location_id_gap
+    for i in range(max_research_locations * 2):
+        locationName = "Raid Location " + str(i)
+        locationId = i + baseLocationId
+        location_name_to_id[locationName] = locationId
+
 
     baseLocationId = baseLocationId + location_id_gap
     locationName = "Space Victory"
@@ -236,6 +242,7 @@ class RimworldWorld(World):
             self.progression_items[self.player].add("Multi-Analyzer")
 
         craftLocationCount = getattr(self.options, "CraftLocationCount").value
+        raidLocationCount = getattr(self.options, "RaidLocationCount").value
         royalty_disabled = not getattr(self.options, "RoyaltyEnabled")
         ideology_disabled = not getattr(self.options, "IdeologyEnabled")
         biotech_disabled = not getattr(self.options, "BiotechEnabled")
@@ -325,6 +332,28 @@ class RimworldWorld(World):
             self.craft_location_recipes[self.player][locationId] = [itemName1, itemName2]
             # print(self.player_name + "'s " + locationName + ": " + itemName1 + " + " + itemName2 + "(" + str(prerequisites) + ")")
             location_pool[locationName] = locationId
+
+        prerequisites = []
+        prerequisites.extend(simple_raid_tier_requirements)
+        for i in range(raidLocationCount):
+            locationName = "Raid Location " + str(i)
+            locationId = self.location_name_to_id[locationName]
+            location_pool[locationName] = locationId
+            if i == (raidLocationCount // raid_tiers):
+                prerequisites.extend(gun_raid_tier_requirements)
+            if i == (raidLocationCount // raid_tiers) * 2:
+                prerequisites.extend(better_gun_raid_tier_requirements)
+            if i == (raidLocationCount // raid_tiers) * 3:
+                prerequisites.extend(spacer_raid_tier_requirements)
+            self.location_prerequisites[self.player][locationName] = prerequisites.copy()
+            location_pool[locationName] = locationId
+
+        for item in prerequisites:
+            if item is str:
+                self.progression_items[self.player].add(item)
+            else:
+                for subitem in item:
+                    self.progression_items[self.player].add(subitem)
 
         self.location_counts[self.player] += len(location_pool)
         main_region.add_locations(location_pool, RimworldLocation)
@@ -485,7 +514,10 @@ class RimworldWorld(World):
             if locationName in self.location_prerequisites[self.player]:
                 # print("prereqs: " + locationName + ": " + str(self.location_prerequisites[self.player][locationName]))
                 for req in self.location_prerequisites[self.player][locationName]:
-                    if req == "AnyElectricity":
+                    if isinstance(req, list):
+                        add_rule(self.get_location(locationName),
+                            lambda state, prereq = req: state.has_any(prereq, self.player), "and")
+                    elif req == "AnyElectricity":
                         add_rule(self.get_location(locationName),
                             lambda state: state.has_any(any_electricity_items, self.player), "and")
                     else:

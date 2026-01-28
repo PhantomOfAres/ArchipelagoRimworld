@@ -58,6 +58,15 @@ class CraftLocationCount(Range):
 	range_end = max_research_locations * 2
 	default = 51
 
+class RaidLocationCount(Range):
+	"""
+	The number of raid locations in the game. These locations require defeating a target enemy.
+	"""
+	display_name = "Raid Location Count"
+	range_start = 0
+	range_end = max_research_locations * 2
+	default = 10
+
 class RaidTrapCount(Range):
 	"""
 	The guaranteed number of raid traps in the game.
@@ -278,6 +287,7 @@ class RimworldOptions(PerGameCommonOptions):
     ResearchBaseCost: ResearchBaseCost
     ResearchMaxPrerequisites: ResearchMaxPrerequisites
     CraftLocationCount: CraftLocationCount
+    RaidLocationCount: RaidLocationCount
     RaidTrapCount: RaidTrapCount
     ColonistItemCount: ColonistItemCount
     PlayerNamesAsColonistItems: PlayerNamesAsColonistItems
@@ -308,9 +318,10 @@ rimworld_options: typing.Dict[str, type(Option)] = {
 		option.__name__: option
 		for option in {
 			BasicResearchLocationCount, HiTechResearchLocationCount, MultiAnalyzerResearchLocationCount,
-			ResearchBaseCost, ResearchMaxPrerequisites, CraftLocationCount, PlayerNamesAsColonistItems,
-			VictoryCondition, RoyaltyEnabled, IdeologyEnabled, BiotechEnabled, AnomalyEnabled, OdysseyEnabled,
-			StartingResearchLevel, BonusResearchItems, ResearchScoutType, ResearchScoutSecretTraps
+			ResearchBaseCost, ResearchMaxPrerequisites, CraftLocationCount, RaidLocationCount,
+            PlayerNamesAsColonistItems, VictoryCondition, RoyaltyEnabled, IdeologyEnabled, BiotechEnabled,
+            AnomalyEnabled, OdysseyEnabled, StartingResearchLevel, BonusResearchItems, ResearchScoutType,
+            ResearchScoutSecretTraps
 		}
 	}
 }
