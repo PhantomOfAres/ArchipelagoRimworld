@@ -475,7 +475,7 @@ class RimworldWorld(World):
 
         victoryCondition = getattr(self.options, "VictoryCondition")
         if (victoryCondition == 5):
-            statueCount = getattr(self.options, "MonumentStatueCount").value
+            statueCount = getattr(self.options, "MonumentStatueCount").value + getattr(self.options, "ExtraMonumentStatueCount").value
             for i in range(statueCount):
                 self.item_counts[self.player] += 1
                 itempool.append(self.create_item("Archipelago Sculpture", ItemClassification.progression))

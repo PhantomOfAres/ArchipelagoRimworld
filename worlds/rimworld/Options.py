@@ -134,6 +134,15 @@ class MonumentStatueCount(Range):
     range_end = 30
     default = 5
 
+class ExtraMonumentStatueCount(Range):
+    """
+    If the monument victory condition is enabled, this specifies how many extra monument statues will be in the pool, allowing the player an easier victory.
+    """
+    display_name = "Extra Monument Statue Count"
+    range_start = 1
+    range_end = 30
+    default = 0
+
 class MonumentOtherBuildingRequirementCount(Range):
     """
     If the monument victory condition is enabled, this specifies how many non-statue building requirements will be required to create a monument and win the game.
@@ -304,6 +313,7 @@ class RimworldOptions(PerGameCommonOptions):
     PercentFillerAsTraps: PercentFillerAsTraps
     VictoryCondition: VictoryCondition
     MonumentStatueCount: MonumentStatueCount
+    ExtraMonumentStatueCount: ExtraMonumentStatueCount
     MonumentOtherBuildingRequirementCount: MonumentOtherBuildingRequirementCount
     MonumentWealthRequirement: MonumentWealthRequirement
     RoyaltyEnabled: RoyaltyEnabled
