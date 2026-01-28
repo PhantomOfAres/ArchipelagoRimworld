@@ -135,6 +135,12 @@ class RimworldWorld(World):
         locationId = i + baseLocationId
         location_name_to_id[locationName] = locationId
 
+    baseLocationId = baseLocationId + location_id_gap
+    for i in range(max_research_locations):
+        locationName = "Trade Location " + str(i)
+        locationId = i + baseLocationId
+        location_name_to_id[locationName] = locationId
+
 
     baseLocationId = baseLocationId + location_id_gap
     locationName = "Space Victory"
@@ -243,6 +249,7 @@ class RimworldWorld(World):
 
         craftLocationCount = getattr(self.options, "CraftLocationCount").value
         raidLocationCount = getattr(self.options, "RaidLocationCount").value
+        tradeLocationCount = getattr(self.options, "TradeLocationCount").value
         royalty_disabled = not getattr(self.options, "RoyaltyEnabled")
         ideology_disabled = not getattr(self.options, "IdeologyEnabled")
         biotech_disabled = not getattr(self.options, "BiotechEnabled")
@@ -346,6 +353,10 @@ class RimworldWorld(World):
             if i == (raidLocationCount // raid_tiers) * 3:
                 prerequisites.extend(spacer_raid_tier_requirements)
             self.location_prerequisites[self.player][locationName] = prerequisites.copy()
+
+        for i in range(tradeLocationCount):
+            locationName = "Trade Location " + str(i)
+            locationId = self.location_name_to_id[locationName]
             location_pool[locationName] = locationId
 
         for item in prerequisites:
