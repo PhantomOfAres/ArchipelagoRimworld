@@ -37,6 +37,7 @@ class RimworldWorld(World):
     item_name_to_expansion = {}
     tribal_tech_items = []
     crashlanded_tech_items = []
+    filler_item_names = []
 
     craftable_item_id_to_name = {}
     craftable_item_id_to_prereqs = {}
@@ -81,6 +82,11 @@ class RimworldWorld(World):
             if (prerequisites is not None):
                 for prereq in prerequisites:
                     craftable_item_id_to_prereqs[itemId].append(prereq.text)
+
+            filler_item_name = item.find("StackSize").text + " " + itemName
+            filler_item_names.append(filler_item_name)
+            item_name_to_expansion[filler_item_name] = expansion
+            item_name_to_id[filler_item_name] = itemId
         elif (defType == "BuildingThingDef"):
             defName = item.find("defName").text
             defName = defName.removesuffix("Building")
@@ -161,6 +167,7 @@ class RimworldWorld(World):
         self.location_prerequisites = {}
         self.monument_data = {}
         self.progression_items = set()
+        self.location_id_to_alias: dict[int, str] = {}
 
     # tell Universal Tracker to regenerate with slot data.
     @staticmethod
@@ -189,7 +196,6 @@ class RimworldWorld(World):
                 if "Rimworld" in self.multiworld.re_gen_passthrough:
                     slot_data = self.multiworld.re_gen_passthrough["Rimworld"]
                     self.location_prerequisites = slot_data["location_prerequisites"]
-                    self.location_id_to_alias: dict[int, str] = {}
                     if (len(slot_data["craft_recipes"]) > 0):
                         for locId, ingredients in slot_data["craft_recipes"].items():
                             adjustedId = int(locId) - self.first_craft_location_id
@@ -517,12 +523,36 @@ class RimworldWorld(World):
         trapRandomChance = getattr(self.options, "PercentFillerAsTraps")
         if self.item_counts < self.location_counts:
             logger.warning("Player " + self.player_name + " had " + str(self.item_counts) + " items, but " + str(self.location_counts) + " locations! Adding filler.")
+
+            possibleItems = []
+            royalty_disabled = not getattr(self.options, "RoyaltyEnabled")
+            ideology_disabled = not getattr(self.options, "IdeologyEnabled")
+            biotech_disabled = not getattr(self.options, "BiotechEnabled")
+            anomaly_disabled = not getattr(self.options, "AnomalyEnabled")
+            odyssey_disabled = not getattr(self.options, "OdysseyEnabled")
+            for fillerName in self.filler_item_names:
+                if royalty_disabled and self.item_name_to_expansion[fillerName] == "Ludeon.RimWorld.Royalty":
+                    continue
+                if ideology_disabled and self.item_name_to_expansion[fillerName] == "Ludeon.RimWorld.Ideology":
+                    continue
+                if biotech_disabled and self.item_name_to_expansion[fillerName] == "Ludeon.RimWorld.Biotech":
+                    continue
+                if anomaly_disabled and self.item_name_to_expansion[fillerName] == "Ludeon.RimWorld.Anomaly":
+                    continue
+                if odyssey_disabled and self.item_name_to_expansion[fillerName] == "Ludeon.RimWorld.Odyssey":
+                    continue
+                possibleItems.append(fillerName)
+
+            # Eventually, make this realerer
+            possibleItems.append("Ship Chunk Drop")
+
             while self.item_counts < self.location_counts:
                 self.item_counts += 1
                 if self.random.randrange(100) < trapRandomChance:
                     self.multiworld.itempool.append(self.create_item("Enemy Raid", ItemClassification.trap))
                 else:
-                    self.multiworld.itempool.append(self.create_item("Ship Chunk Drop", ItemClassification.filler))
+                    fillerIndex = self.random.randrange(len(possibleItems))
+                    self.multiworld.itempool.append(self.create_item(possibleItems[fillerIndex], ItemClassification.filler))
         if self.item_counts > self.location_counts:
             logger.warning("Player " + self.player_name + " had " + str(self.item_counts) + " items, but " + str(self.location_counts) + " locations! Adding basic research as filler.")
             main_region = self.multiworld.get_region("Main", self.player)

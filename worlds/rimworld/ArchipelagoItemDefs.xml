@@ -1838,6 +1838,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Wort</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>25</StackSize>
     <Prerequisites>
       <li>Beer Brewing</li>
     </Prerequisites>
@@ -1849,6 +1850,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Kibble</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>167</Id>
@@ -1857,6 +1859,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Pemmican</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Pemmican</li>
     </Prerequisites>
@@ -1868,6 +1871,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Simple Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>169</Id>
@@ -1876,6 +1880,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Fine Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>170</Id>
@@ -1884,6 +1889,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Vegetarian Fine Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>171</Id>
@@ -1892,6 +1898,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Carnivore Fine Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>172</Id>
@@ -1900,6 +1907,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Lavish Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>173</Id>
@@ -1908,6 +1916,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Carnivore Lavish Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>174</Id>
@@ -1916,6 +1925,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Vegetarian Lavish Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>175</Id>
@@ -1924,6 +1934,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Packaged Survival Meal</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>10</StackSize>
     <Prerequisites>
       <li>Packaged Survival Meal</li>
     </Prerequisites>
@@ -1935,6 +1946,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Steel</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Electricity</li>
       <li>AnyElectricity</li>
@@ -1947,6 +1959,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Chemfuel</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>150</StackSize>
     <Prerequisites>
       <li>Biofuel Refining</li>
       <li>AnyElectricity</li>
@@ -1959,6 +1972,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Component</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>20</StackSize>
     <Prerequisites>
       <li>Fabrication</li>
       <li>AnyElectricity</li>
@@ -1971,6 +1985,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Advanced Component</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>2</StackSize>
     <Prerequisites>
       <li>Advanced Fabrication</li>
       <li>Fabrication</li>
@@ -1984,6 +1999,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Patchleather</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -1995,6 +2011,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Sandstone Blocks</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Stonecutting</li>
     </Prerequisites>
@@ -2006,6 +2023,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Granite Blocks</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Stonecutting</li>
     </Prerequisites>
@@ -2017,6 +2035,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Limestone Blocks</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Stonecutting</li>
     </Prerequisites>
@@ -2028,6 +2047,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Slate Blocks</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Stonecutting</li>
     </Prerequisites>
@@ -2039,6 +2059,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Marble Blocks</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Stonecutting</li>
     </Prerequisites>
@@ -2050,6 +2071,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Baby Food</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>75</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>187</Id>
@@ -2058,6 +2080,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Vacstone Blocks</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Stonecutting</li>
     </Prerequisites>
@@ -2069,6 +2092,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Go-Juice</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Go-Juice Production</li>
       <li>Drug Production</li>
@@ -2081,6 +2105,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Penoxycyline</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Penoxycyline Production</li>
       <li>Drug Production</li>
@@ -2093,6 +2118,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Flake</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Psychite Refining</li>
       <li>Drug Production</li>
@@ -2105,6 +2131,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Psychite Tea</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Psychoid Brewing</li>
     </Prerequisites>
@@ -2116,6 +2143,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Yayo</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Psychite Refining</li>
       <li>Drug Production</li>
@@ -2128,6 +2156,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Smokeleaf Joint</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Drug Production</li>
     </Prerequisites>
@@ -2139,6 +2168,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Wake-Up</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>15</StackSize>
     <Prerequisites>
       <li>Wake-Up Production</li>
       <li>Drug Production</li>
@@ -2151,6 +2181,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Medicine</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Medicine Production</li>
       <li>Drug Production</li>
@@ -2163,6 +2194,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>High-Explosive Shell</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Mortars</li>
       <li>Machining</li>
@@ -2176,6 +2208,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Incendiary Shell</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Mortars</li>
       <li>Machining</li>
@@ -2189,6 +2222,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>EMP Shell</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Microelectronics</li>
       <li>Machining</li>
@@ -2203,6 +2237,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Smoke Shell</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Mortars</li>
       <li>Machining</li>
@@ -2216,6 +2251,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Firefoam Shell</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Firefoam</li>
       <li>Machining</li>
@@ -2229,6 +2265,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Shield Belt</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Shields</li>
       <li>Machining</li>
@@ -2243,6 +2280,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Cowboy Hat</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2254,6 +2292,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Bowler Hat</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2265,6 +2304,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Tuque</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2276,6 +2316,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Veil</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2287,6 +2328,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Simple Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -2298,6 +2340,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Flak Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flak Armor</li>
       <li>Machining</li>
@@ -2312,6 +2355,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Marine Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Marine Armor</li>
       <li>Fabrication</li>
@@ -2325,6 +2369,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Recon Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Recon Armor</li>
       <li>Fabrication</li>
@@ -2338,6 +2383,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Hood</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2349,6 +2395,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Face Mask</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2360,6 +2407,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Smokepop Pack</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smokepop Packs</li>
       <li>Machining</li>
@@ -2374,6 +2422,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Firefoam Pop Pack</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Firefoam</li>
       <li>Machining</li>
@@ -2388,6 +2437,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Tribalwear</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>215</Id>
@@ -2396,6 +2446,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Parka</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2407,6 +2458,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Pants</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2418,6 +2470,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>T-Shirt</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2429,6 +2482,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Button-Down Shirt</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2440,6 +2494,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Duster</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2451,6 +2506,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Jacket</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2462,6 +2518,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Plate Armor</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Plate Armor</li>
       <li>Smithing</li>
@@ -2474,6 +2531,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Flak Vest</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flak Armor</li>
       <li>Machining</li>
@@ -2488,6 +2546,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Flak Pants</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flak Armor</li>
       <li>Machining</li>
@@ -2502,6 +2561,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Flak Jacket</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flak Armor</li>
       <li>Machining</li>
@@ -2516,6 +2576,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Marine Armor</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Marine Armor</li>
       <li>Fabrication</li>
@@ -2529,6 +2590,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Recon Armor</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Recon Armor</li>
       <li>Fabrication</li>
@@ -2542,6 +2604,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Cape</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2553,6 +2616,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Robe</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -2564,6 +2628,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Eye</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2577,6 +2642,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Arm</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2590,6 +2656,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Leg</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2603,6 +2670,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Spine</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2616,6 +2684,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Heart</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2629,6 +2698,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Stomach</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2642,6 +2712,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Ear</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2655,6 +2726,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Tongue</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2668,6 +2740,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Bionic Jaw</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bionic Replacements</li>
       <li>Fabrication</li>
@@ -2681,6 +2754,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Prosthetic Leg</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Prosthetics</li>
       <li>Machining</li>
@@ -2695,6 +2769,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Prosthetic Arm</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Prosthetics</li>
       <li>Machining</li>
@@ -2709,6 +2784,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Prosthetic Heart</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Prosthetics</li>
       <li>Machining</li>
@@ -2723,6 +2799,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Cochlear Implant</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Prosthetics</li>
       <li>Machining</li>
@@ -2737,6 +2814,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Power Claw</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Specialized Limbs</li>
       <li>Machining</li>
@@ -2751,6 +2829,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Joywire</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Brain Wiring</li>
       <li>Machining</li>
@@ -2765,6 +2844,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Painstopper</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Brain Wiring</li>
       <li>Machining</li>
@@ -2779,6 +2859,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Breach Axe</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -2790,6 +2871,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Mace</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -2801,6 +2883,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Gladius</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -2812,6 +2895,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Longsword</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Long Blades</li>
       <li>Smithing</li>
@@ -2824,6 +2908,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Club</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>250</Id>
@@ -2832,6 +2917,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Knife</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>251</Id>
@@ -2840,6 +2926,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Ikwa</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -2851,6 +2938,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Spear</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Long Blades</li>
       <li>Smithing</li>
@@ -2863,6 +2951,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Revolver</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gunsmithing</li>
       <li>Machining</li>
@@ -2877,6 +2966,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Autopistol</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Blowback Operation</li>
       <li>Machining</li>
@@ -2891,6 +2981,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Machine Pistol</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Blowback Operation</li>
       <li>Machining</li>
@@ -2905,6 +2996,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Incendiary Launcher</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gunsmithing</li>
       <li>Machining</li>
@@ -2919,6 +3011,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Smoke Launcher</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gunsmithing</li>
       <li>Machining</li>
@@ -2933,6 +3026,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>EMP Launcher</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Microelectronics</li>
       <li>Machining</li>
@@ -2947,6 +3041,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Bolt-Action Rifle</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gunsmithing</li>
       <li>Machining</li>
@@ -2961,6 +3056,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Pump Shotgun</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gunsmithing</li>
       <li>Machining</li>
@@ -2975,6 +3071,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Chain Shotgun</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gas Operation</li>
       <li>Machining</li>
@@ -2989,6 +3086,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Heavy SMG</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gas Operation</li>
       <li>Machining</li>
@@ -3003,6 +3101,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>LMG</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gas Operation</li>
       <li>Machining</li>
@@ -3017,6 +3116,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Assault Rifle</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Precision Rifling</li>
       <li>Machining</li>
@@ -3031,6 +3131,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Sniper Rifle</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Precision Rifling</li>
       <li>Machining</li>
@@ -3045,6 +3146,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Minigun</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Multibarrel Weapons</li>
       <li>Machining</li>
@@ -3059,6 +3161,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Frag Grenades</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Machining</li>
       <li>AnyElectricity</li>
@@ -3071,6 +3174,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Molotov Cocktails</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Machining</li>
       <li>AnyElectricity</li>
@@ -3083,6 +3187,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>EMP Grenades</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Microelectronics</li>
       <li>Machining</li>
@@ -3097,6 +3202,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Short Bow</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>271</Id>
@@ -3105,6 +3211,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Pila</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -3116,6 +3223,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Recurve Bow</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Recurve Bow</li>
     </Prerequisites>
@@ -3127,6 +3235,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Greatbow</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Greatbow</li>
     </Prerequisites>
@@ -3138,6 +3247,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Charge Rifle</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Pulse-Charged Munitions</li>
       <li>Fabrication</li>
@@ -3151,6 +3261,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Charge Lance</label>
     <RequiredExpansion>Ludeon.RimWorld</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Pulse-Charged Munitions</li>
       <li>Fabrication</li>
@@ -3164,6 +3275,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Neurocalculator</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Neural Computation</li>
       <li>Fabrication</li>
@@ -3177,6 +3289,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Learning Assistant</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Neural Computation</li>
       <li>Fabrication</li>
@@ -3190,6 +3303,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Gastro-Analyzer</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Molecular Analysis</li>
       <li>Fabrication</li>
@@ -3203,6 +3317,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Immunoenhancer</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Molecular Analysis</li>
       <li>Fabrication</li>
@@ -3216,6 +3331,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Coagulator</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Healing Factors</li>
       <li>Fabrication</li>
@@ -3229,6 +3345,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Healing Enhancer</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Healing Factors</li>
       <li>Fabrication</li>
@@ -3242,6 +3359,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Toughskin Gland</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Skin Hardening</li>
       <li>Fabrication</li>
@@ -3255,6 +3373,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Armorskin Gland</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Skin Hardening</li>
       <li>Fabrication</li>
@@ -3268,6 +3387,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Stoneskin Gland</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Skin Hardening</li>
       <li>Fabrication</li>
@@ -3281,6 +3401,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Aesthetic Shaper</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flesh Shaping</li>
       <li>Fabrication</li>
@@ -3294,6 +3415,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Aesthetic Nose</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flesh Shaping</li>
       <li>Fabrication</li>
@@ -3307,6 +3429,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Love Enhancer</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Flesh Shaping</li>
       <li>Fabrication</li>
@@ -3320,6 +3443,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Sterilizing Stomach</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Artificial Metabolism</li>
       <li>Fabrication</li>
@@ -3333,6 +3457,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Reprocessor Stomach</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Artificial Metabolism</li>
       <li>Fabrication</li>
@@ -3346,6 +3471,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Nuclear Stomach</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Artificial Metabolism</li>
       <li>Fabrication</li>
@@ -3359,6 +3485,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Circadian Assistant</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Circadian Influence</li>
       <li>Fabrication</li>
@@ -3372,6 +3499,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Circadian Half-Cycler</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Circadian Influence</li>
       <li>Fabrication</li>
@@ -3385,6 +3513,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Mindscrew</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Brain Wiring</li>
       <li>Machining</li>
@@ -3399,6 +3528,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Drill Arm</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Specialized Limbs</li>
       <li>Machining</li>
@@ -3413,6 +3543,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Field Hand</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Specialized Limbs</li>
       <li>Machining</li>
@@ -3427,6 +3558,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Hand Talon</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Compact Weaponry</li>
       <li>Machining</li>
@@ -3441,6 +3573,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Elbow Blade</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Compact Weaponry</li>
       <li>Machining</li>
@@ -3455,6 +3588,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Knee Spike</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Compact Weaponry</li>
       <li>Machining</li>
@@ -3469,6 +3603,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Venom Fangs</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Poison Synthesis</li>
       <li>Machining</li>
@@ -3483,6 +3618,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Venom Talon</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Poison Synthesis</li>
       <li>Machining</li>
@@ -3497,6 +3633,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Jump Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Jump Packs</li>
       <li>Machining</li>
@@ -3511,6 +3648,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Low-Shield Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Shields</li>
       <li>Machining</li>
@@ -3525,6 +3663,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Formal Shirt</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Noble Apparel</li>
       <li>Complex Clothing</li>
@@ -3537,6 +3676,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Corset</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Noble Apparel</li>
       <li>Complex Clothing</li>
@@ -3549,6 +3689,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Formal Vest</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Noble Apparel</li>
       <li>Complex Clothing</li>
@@ -3561,6 +3702,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Prestige Robe</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Royal Apparel</li>
       <li>Complex Clothing</li>
@@ -3573,6 +3715,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Ladies Hat</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Noble Apparel</li>
       <li>Complex Clothing</li>
@@ -3585,6 +3728,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Top Hat</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Noble Apparel</li>
       <li>Complex Clothing</li>
@@ -3597,6 +3741,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Coronet</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Royal Apparel</li>
       <li>Smithing</li>
@@ -3609,6 +3754,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Crown</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Royal Apparel</li>
       <li>Smithing</li>
@@ -3621,6 +3767,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Beret</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Noble Apparel</li>
       <li>Complex Clothing</li>
@@ -3633,6 +3780,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Prestige Recon Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Recon Armor</li>
       <li>Fabrication</li>
@@ -3646,6 +3794,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Prestige Recon Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Recon Armor</li>
       <li>Fabrication</li>
@@ -3659,6 +3808,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Prestige Marine Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Marine Armor</li>
       <li>Fabrication</li>
@@ -3672,6 +3822,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Prestige Marine Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Marine Armor</li>
       <li>Fabrication</li>
@@ -3685,6 +3836,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Cataphract Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Cataphract Armor</li>
       <li>Fabrication</li>
@@ -3698,6 +3850,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Cataphract Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Cataphract Armor</li>
       <li>Fabrication</li>
@@ -3711,6 +3864,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Prestige Cataphract Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Cataphract Armor</li>
       <li>Fabrication</li>
@@ -3724,6 +3878,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Prestige Cataphract Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Cataphract Armor</li>
       <li>Fabrication</li>
@@ -3737,6 +3892,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Locust Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Recon Armor</li>
       <li>Fabrication</li>
@@ -3750,6 +3906,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Grenadier Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Marine Armor</li>
       <li>Fabrication</li>
@@ -3763,6 +3920,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Phoenix Armor</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Cataphract Armor</li>
       <li>Fabrication</li>
@@ -3776,6 +3934,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Gunlink</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Gunlink</li>
       <li>Fabrication</li>
@@ -3789,6 +3948,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Axe</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -3800,6 +3960,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Warhammer</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Long Blades</li>
       <li>Smithing</li>
@@ -3812,6 +3973,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Headwrap</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3823,6 +3985,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Broadwrap</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3834,6 +3997,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Visage Mask</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3845,6 +4009,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Slicecap</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3856,6 +4021,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Slave Collar</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3867,6 +4033,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Authority Cap</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3878,6 +4045,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Tailcap</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3889,6 +4057,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Shadecone</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3900,6 +4069,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Flophat</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3911,6 +4081,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Slave Body Strap</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3922,6 +4093,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Burka</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3933,6 +4105,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Torture Crown</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -3944,6 +4117,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Blindfold</label>
     <RequiredExpansion>Ludeon.RimWorld.Ideology</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -3955,6 +4129,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Detoxifier Lung</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Toxin Filtration</li>
       <li>Fabrication</li>
@@ -3968,6 +4143,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Detoxifier Kidney</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Toxin Filtration</li>
       <li>Fabrication</li>
@@ -3981,6 +4157,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Control Sublink (Standard)</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Standard Mechtech</li>
       <li>Machining</li>
@@ -3996,6 +4173,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Control Sublink (High)</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>High Mechtech</li>
       <li>Machining</li>
@@ -4012,6 +4190,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Remote Repairer</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>High Mechtech</li>
       <li>Machining</li>
@@ -4028,6 +4207,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Mech Gestation Processor</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Standard Mechtech</li>
       <li>Machining</li>
@@ -4043,6 +4223,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Remote Shielder</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>High Mechtech</li>
       <li>Machining</li>
@@ -4059,6 +4240,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Repair Probe</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ultra Mechtech</li>
       <li>Machining</li>
@@ -4076,6 +4258,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Basic Subcore</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Basic Mechtech</li>
       <li>AnyElectricity</li>
@@ -4089,6 +4272,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Tox Shell</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Tox Gas</li>
       <li>Machining</li>
@@ -4102,6 +4286,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Kid Romper</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4113,6 +4298,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Kid Shirt</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4124,6 +4310,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Kid Pants</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4135,6 +4322,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Kid Parka</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4146,6 +4334,7 @@
     <TechLevel>Neolithic</TechLevel>
     <label>Kid Tribalwear</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>354</Id>
@@ -4154,6 +4343,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Kid Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Smithing</li>
     </Prerequisites>
@@ -4165,6 +4355,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Airwire Headset</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Basic Mechtech</li>
       <li>Machining</li>
@@ -4179,6 +4370,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Array Headset</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Standard Mechtech</li>
       <li>Machining</li>
@@ -4193,6 +4385,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Integrator Headset</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>High Mechtech</li>
       <li>Fabrication</li>
@@ -4208,6 +4401,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Mechcommander Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Standard Mechtech</li>
       <li>Machining</li>
@@ -4223,6 +4417,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Mechlord Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ultra Mechtech</li>
       <li>Fabrication</li>
@@ -4239,6 +4434,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Gas Mask</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Machining</li>
       <li>AnyElectricity</li>
@@ -4251,6 +4447,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Control Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Basic Mechtech</li>
       <li>Machining</li>
@@ -4265,6 +4462,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Bandwidth Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Standard Mechtech</li>
       <li>Machining</li>
@@ -4280,6 +4478,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Tox Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Tox Gas</li>
       <li>Machining</li>
@@ -4294,6 +4493,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Mechlord Suit</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ultra Mechtech</li>
       <li>Fabrication</li>
@@ -4310,6 +4510,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Heavy Bandolier</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4321,6 +4522,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Sash</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4332,6 +4534,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Toxbomb Launcher</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Tox Gas</li>
       <li>Machining</li>
@@ -4346,6 +4549,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Tox Grenades</label>
     <RequiredExpansion>Ludeon.RimWorld.Biotech</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Tox Gas</li>
       <li>Machining</li>
@@ -4360,6 +4564,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Ghoul Plating</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ghoul Enhancements</li>
       <li>Bioferrite Shaping</li>
@@ -4372,6 +4577,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Ghoul Barbs</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ghoul Enhancements</li>
       <li>Bioferrite Shaping</li>
@@ -4384,6 +4590,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Adrenal Heart</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ghoul Enhancements</li>
       <li>Bioferrite Shaping</li>
@@ -4398,6 +4605,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Corrosive Heart</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ghoul Enhancements</li>
       <li>Bioferrite Shaping</li>
@@ -4412,6 +4620,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Metalblood Heart</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ghoul Enhancements</li>
       <li>Bioferrite Shaping</li>
@@ -4426,6 +4635,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Revenant Vertebrae</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Revenant Invisibility</li>
       <li>Bioferrite Shaping</li>
@@ -4439,6 +4649,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Shard Animal Pulser</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Insanity Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4452,6 +4663,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Biomutation Pulser</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Mutation Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4465,6 +4677,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Deadlife Shell</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>5</StackSize>
     <Prerequisites>
       <li>Deadlife Dust</li>
       <li>Bioferrite Shaping</li>
@@ -4478,6 +4691,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Voidsight Serum</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>2</StackSize>
     <Prerequisites>
       <li>Serum Synthesis</li>
       <li>AnyElectricity</li>
@@ -4490,6 +4704,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Metalblood Serum</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>2</StackSize>
     <Prerequisites>
       <li>Metalblood Serum</li>
       <li>Serum Synthesis</li>
@@ -4503,6 +4718,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Juggernaut Serum</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>2</StackSize>
     <Prerequisites>
       <li>Juggernaut Serum</li>
       <li>Serum Synthesis</li>
@@ -4516,6 +4732,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Mind-Numb Serum</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>2</StackSize>
     <Prerequisites>
       <li>Mind-Numb Serum</li>
       <li>Serum Synthesis</li>
@@ -4529,6 +4746,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Ghoul Resurrection Serum</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>2</StackSize>
     <Prerequisites>
       <li>Ghoul Resurrection</li>
       <li>Serum Synthesis</li>
@@ -4542,6 +4760,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Ritual Mask</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bioferrite Extraction</li>
       <li>Bioferrite Shaping</li>
@@ -4554,6 +4773,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Ceremonial Hood</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bioferrite Extraction</li>
       <li>Bioferrite Shaping</li>
@@ -4566,6 +4786,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Disruptor Flare Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Disruptor Flares</li>
       <li>Bioferrite Shaping</li>
@@ -4580,6 +4801,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Turret Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Turret Pack</li>
       <li>Machining</li>
@@ -4594,6 +4816,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Deadlife Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Deadlife Dust</li>
       <li>Bioferrite Shaping</li>
@@ -4607,6 +4830,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Shard Shock Lance</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Insanity Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4620,6 +4844,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Shard Insanity Lance</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Insanity Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4633,6 +4858,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Biomutation Lance</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Mutation Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4646,6 +4872,7 @@
     <TechLevel>Medieval</TechLevel>
     <label>Lab Coat</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Complex Clothing</li>
     </Prerequisites>
@@ -4657,6 +4884,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Hellcat Rifle</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bioferrite Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4671,6 +4899,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Incinerator</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bioferrite Weaponry</li>
       <li>Bioferrite Shaping</li>
@@ -4685,6 +4914,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Nerve Spiker</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Bioferrite Extraction</li>
       <li>Bioferrite Shaping</li>
@@ -4697,6 +4927,7 @@
     <TechLevel>Anomaly</TechLevel>
     <label>Blood Warmer</label>
     <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Ghoul Enhancements</li>
       <li>Bioferrite Shaping</li>
@@ -4711,6 +4942,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Pilot Assistant</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Advanced Gravtech</li>
       <li>Fabrication</li>
@@ -4724,6 +4956,7 @@
     <TechLevel>HardToMake</TechLevel>
     <label>Vacskin Gland</label>
     <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Skin Hardening</li>
       <li>Fabrication</li>
@@ -4737,6 +4970,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Gravlite Panel</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>75</StackSize>
     <Prerequisites>
       <li>Advanced Gravtech</li>
       <li>Fabrication</li>
@@ -4750,6 +4984,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Vacsuit Helmet</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Orbital Tech</li>
       <li>Machining</li>
@@ -4764,6 +4999,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Hunter Pack</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Hunter Drone</li>
       <li>Machining</li>
@@ -4778,6 +5014,7 @@
     <TechLevel>Industrial</TechLevel>
     <label>Vacsuit</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Orbital Tech</li>
       <li>Machining</li>
@@ -4792,6 +5029,7 @@
     <TechLevel>Spacer</TechLevel>
     <label>Beam Repeater</label>
     <RequiredExpansion>Ludeon.RimWorld.Odyssey</RequiredExpansion>
+    <StackSize>1</StackSize>
     <Prerequisites>
       <li>Beam Weapons</li>
       <li>Fabrication</li>
