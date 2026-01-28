@@ -3985,6 +3985,7 @@
       <li>Standard Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -3999,6 +4000,8 @@
       <li>High Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4013,6 +4016,8 @@
       <li>High Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4027,6 +4032,7 @@
       <li>Standard Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4041,6 +4047,8 @@
       <li>High Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4055,6 +4063,9 @@
       <li>Ultra Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
+      <li>High Mechtech</li>
       <li>Advanced Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4186,6 +4197,8 @@
       <li>High Mechtech</li>
       <li>Fabrication</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
@@ -4199,6 +4212,7 @@
       <li>Standard Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4213,6 +4227,9 @@
       <li>Ultra Mechtech</li>
       <li>Fabrication</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
+      <li>High Mechtech</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
@@ -4252,6 +4269,7 @@
       <li>Standard Mechtech</li>
       <li>Machining</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
       <li>Fabrication</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
@@ -4280,6 +4298,9 @@
       <li>Ultra Mechtech</li>
       <li>Fabrication</li>
       <li>AnyElectricity</li>
+      <li>Basic Mechtech</li>
+      <li>Standard Mechtech</li>
+      <li>High Mechtech</li>
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
