@@ -42,6 +42,7 @@ class RimworldWorld(World):
     craftable_item_id_to_name = {}
     craftable_item_id_to_prereqs = {}
     craftable_item_tech_level = {}
+    craftable_item_def_name_to_human_name = {}
 
     building_name_to_prereqs = {}
 
@@ -74,6 +75,7 @@ class RimworldWorld(World):
             craftable_item_id_to_prereqs[itemId] = []
             defName = item.find("defName").text
             defName = defName.replace("Thing", "")
+            craftable_item_def_name_to_human_name[defName] = itemName
             techLevel = item.find("TechLevel").text
             craftable_item_id_to_name[itemId] = defName
             item_name_to_expansion[defName] = expansion
@@ -86,7 +88,7 @@ class RimworldWorld(World):
             filler_item_name = item.find("StackSize").text + " " + itemName
             filler_item_names.append(filler_item_name)
             item_name_to_expansion[filler_item_name] = expansion
-            item_name_to_id[filler_item_name] = itemId
+            item_name_to_id[filler_item_name] = int(itemId)
         elif (defType == "BuildingThingDef"):
             defName = item.find("defName").text
             defName = defName.removesuffix("Building")
@@ -170,9 +172,7 @@ class RimworldWorld(World):
         self.location_id_to_alias: dict[int, str] = {}
 
     # tell Universal Tracker to regenerate with slot data.
-    @staticmethod
-    def interpret_slot_data(slot_data: Dict[str, Any]) -> Dict[str, Any]:
-        return slot_data
+    ut_can_gen_without_yaml = True
 
     def generate_early(self):
         royalty_enabled = getattr(self.options, "RoyaltyEnabled")
@@ -186,26 +186,37 @@ class RimworldWorld(World):
         if not anomaly_enabled and victoryCondition == 4:
             raise OptionError("Win condition cannot be Anomaly while Anomaly is disabled!")
 
-        self.create_regions_early()
-        self.create_items_early()
-        self.create_filler()
-
         # Universal Tracker support
         if hasattr(self.multiworld, "generation_is_fake"):
             if hasattr(self.multiworld, "re_gen_passthrough"):
                 if "Rimworld" in self.multiworld.re_gen_passthrough:
                     slot_data = self.multiworld.re_gen_passthrough["Rimworld"]
                     self.location_prerequisites = slot_data["location_prerequisites"]
+                    self.options.RoyaltyEnabled = slot_data["options"]["RoyaltyEnabled"]
+                    self.options.IdeologyEnabled = slot_data["options"]["IdeologyEnabled"]
+                    self.options.AnomalyEnabled = slot_data["options"]["AnomalyEnabled"]
+                    self.options.BiotechEnabled = slot_data["options"]["BiotechEnabled"]
+                    self.options.OdysseyEnabled = slot_data["options"]["OdysseyEnabled"]
+                    self.options.VictoryCondition = slot_data["options"]["VictoryCondition"]
+                    self.options.BasicResearchLocationCount.value = slot_data["options"]["BasicResearchLocationCount"]
+                    self.options.HiTechResearchLocationCount.value = slot_data["options"]["HiTechResearchLocationCount"]
+                    self.options.MultiAnalyzerResearchLocationCount.value = slot_data["options"]["MultiAnalyzerResearchLocationCount"]
+                    self.options.CraftLocationCount.value = slot_data["options"]["CraftLocationCount"]
+                    self.options.RaidLocationCount.value = slot_data["options"]["RaidLocationCount"]
+                    self.options.TradeLocationCount.value = slot_data["options"]["TradeLocationCount"]
+
                     if (len(slot_data["craft_recipes"]) > 0):
                         for locId, ingredients in slot_data["craft_recipes"].items():
-                            adjustedId = int(locId) - self.first_craft_location_id
-                            self.location_id_to_alias[locId] = "Craft " + str(adjustedId) + " ("
+                            locId = int(locId)
+                            self.location_id_to_alias[locId] = ""
                             for i in range(len(ingredients)):
-                                self.location_id_to_alias[locId] += ingredients[i]
+                                self.location_id_to_alias[locId] += self.craftable_item_def_name_to_human_name[ingredients[i]]
                                 if (i < len(ingredients) - 1):
                                     self.location_id_to_alias[locId] += ", "
-                            self.location_id_to_alias[locId] += ")"
-                            print(str(locId) + ": " + self.location_id_to_alias[locId])
+
+        self.create_regions_early()
+        self.create_items_early()
+        self.create_filler()
 
     def fill_slot_data(self):
         slot_data = {}
@@ -524,7 +535,8 @@ class RimworldWorld(World):
         if self.item_counts < self.location_counts:
             logger.warning("Player " + self.player_name + " had " + str(self.item_counts) + " items, but " + str(self.location_counts) + " locations! Adding filler.")
 
-            possibleItems = []
+            possiblePositiveItems = []
+            possibleNegativeItems = []
             royalty_disabled = not getattr(self.options, "RoyaltyEnabled")
             ideology_disabled = not getattr(self.options, "IdeologyEnabled")
             biotech_disabled = not getattr(self.options, "BiotechEnabled")
@@ -541,18 +553,20 @@ class RimworldWorld(World):
                     continue
                 if odyssey_disabled and self.item_name_to_expansion[fillerName] == "Ludeon.RimWorld.Odyssey":
                     continue
-                possibleItems.append(fillerName)
+                possiblePositiveItems.append(fillerName)
 
             # Eventually, make this realerer
-            possibleItems.append("Ship Chunk Drop")
+            possiblePositiveItems.append("Ship Chunk Drop")
+            possibleNegativeItems.append("Enemy Raid")
 
             while self.item_counts < self.location_counts:
                 self.item_counts += 1
                 if self.random.randrange(100) < trapRandomChance:
-                    self.multiworld.itempool.append(self.create_item("Enemy Raid", ItemClassification.trap))
+                    fillerIndex = self.random.randrange(len(possibleNegativeItems))
+                    self.multiworld.itempool.append(self.create_item(possibleNegativeItems[fillerIndex], ItemClassification.trap))
                 else:
-                    fillerIndex = self.random.randrange(len(possibleItems))
-                    self.multiworld.itempool.append(self.create_item(possibleItems[fillerIndex], ItemClassification.filler))
+                    fillerIndex = self.random.randrange(len(possiblePositiveItems))
+                    self.multiworld.itempool.append(self.create_item(possiblePositiveItems[fillerIndex], ItemClassification.filler))
         if self.item_counts > self.location_counts:
             logger.warning("Player " + self.player_name + " had " + str(self.item_counts) + " items, but " + str(self.location_counts) + " locations! Adding basic research as filler.")
             main_region = self.multiworld.get_region("Main", self.player)

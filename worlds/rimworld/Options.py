@@ -139,7 +139,7 @@ class ExtraMonumentStatueCount(Range):
     If the monument victory condition is enabled, this specifies how many extra monument statues will be in the pool, allowing the player an easier victory.
     """
     display_name = "Extra Monument Statue Count"
-    range_start = 1
+    range_start = 0
     range_end = 30
     default = 0
 
