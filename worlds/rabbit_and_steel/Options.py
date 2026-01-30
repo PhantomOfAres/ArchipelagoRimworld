@@ -13,14 +13,18 @@ if TYPE_CHECKING:
 
 
 class KingdomSanity(DefaultOnToggle):
-    """Kingdoms must be found before they can be visited"""
+    """
+    Kingdoms must be found before they can be visited
+    """
     display_name = "Kingdom Sanity"
 
 
 class MaxKingdomsPerRun(Range):
-    """How many kingdoms you visit before heading to the pale keep.
+    """
+    How many kingdoms you visit before heading to the pale keep.
     If progressive regions and/or kingdom sanity is on,
-    your run ends in a failure if you are not allowed to visit enough kingdoms."""
+    your run ends in a failure if you are not allowed to visit enough kingdoms.
+    """
     display_name = "All Kingdoms"
     range_start = 1
     range_end = 5
@@ -28,25 +32,31 @@ class MaxKingdomsPerRun(Range):
 
 
 class ProgressiveRegions(Toggle):
-    """Introduces items that increases the amount regions you are currently allowed to visit in a run.
+    """
+    Introduces items that increases the amount regions you are currently allowed to visit in a run.
     Includes Pale Keep and Moonlit Pinnacle.
-    Outskirts is always accessible."""
+    Outskirts is always accessible.
+    """
     display_name = "Progressive Regions"
 
 
 class ExcludeKingdoms(OptionSet):
-    """What kingdoms, if any, should not be added to the pool of locations.
+    """
+    What kingdoms, if any, should not be added to the pool of locations.
     There will always be a generic location that any class can obtain.
-    Avaliable Options: [ "Scholar's Nest", "King's Arsenal", "Red Darkhouse", "Churchmouse Streets", "Emerald Lakeside", "The Pale Keep", "Moonlit Pinnacle"]"""
+    Avaliable Options: [ "Scholar's Nest", "King's Arsenal", "Red Darkhouse", "Churchmouse Streets", "Emerald Lakeside"]
+    """
     display_name = "Excluded Kingdoms"
-    valid_keys = kingdom_items.keys()
+    valid_keys = kingdom_items.keys() - {"The Pale Keep", "Moonlit Pinnacle"}
 
 
 class UseKingdomOrderWithKingdomSanity(Toggle):
-    """Introduces another requirement to reaching a kingdom rather than just receiving the item.
+    """
+    Introduces another requirement to reaching a kingdom rather than just receiving the item.
     You also need to have at least one kingdom from all the previous orders.
     Kingdom Order is always used if you have Progressive Regions but not Kingdom Sanity,
-    so you can't access all kingdoms after receiving one progressive region."""
+    so you can't access all kingdoms after receiving one progressive region.
+    """
     display_name = "Enforce Kingdom Order With Kingdom Sanity"
 
 
@@ -82,29 +92,39 @@ class KingdomOrder(OptionCounter):
 
 
 class ClassSanity(Toggle):
-    """Classes must be found before they can be played"""
+    """
+    Classes must be found before they can be played
+    """
     display_name = "Class Sanity"
 
 
 class ExcludeClass(OptionSet):
-    """What class, if any, should not be accounted for in logic.
+    """
+    What class, if any, should not be accounted for in logic.
     Throughout the run you will not be able to play that class at all.
-    Avaliable Options: ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]"""
+    Avaliable Options:
+    ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]
+    """
     display_name = "Exclude Class"
     valid_keys = class_items.keys()
 
 
 class ChecksPerClass(OptionSet):
-    """What classes should have locations associated with them.
+    """
+    What classes should have locations associated with them.
     There will always be a generic location that any class can obtain.
-    Available Options: ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]
-    _ALL can be used to put checks on all classes"""
+    Available Options:
+    ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]
+    _ALL can be used to put checks on all classes
+    """
     display_name = "Checks Per Class"
     valid_keys = class_items.keys() & {"_ALL"}
 
 
 class ShuffleItemSets(Toggle):
-    """Item sets must be found before they can appear in treasure spheres"""
+    """
+    Item sets must be found before they can appear in treasure spheres
+    """
     display_name = "Shuffle Item Sets"
 
 
@@ -112,9 +132,11 @@ class ShuffleItemSets(Toggle):
 
 
 class ChecksPerItemInChest(Toggle):
-    """Each item in a chest is an archipelago item.
+    """
+    Each item in a chest is an archipelago item.
     Shuffles treasure spheres into the item pool.
-    Does not add one per class if 'Checks Per Class' is on"""
+    Does not add one per class if 'Checks Per Class' is on
+    """
     display_name = "Checks Per Item In Chest"
 
 
