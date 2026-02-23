@@ -9,6 +9,9 @@ from . import Items
 if TYPE_CHECKING:
     from .World import RabbitAndSteelWorld
 
+# Track whether Kingdom Outskirts or Crack in the Geode lead to "this" region
+outskirts_kingdoms = ["Scholar's Nest", "King's Arsenal", "Red Darkhouse", "Churchmouse Streets", "Emerald Lakeside", "The Pale Keep"]
+crack_kingdoms = ["Darkhouse Depths", "Subterra Sanctum", "Atelier Aurum"]
 
 def create_and_connect_regions(world: RabbitAndSteelWorld) -> None:
     create_all_regions(world)
@@ -18,8 +21,9 @@ def create_and_connect_regions(world: RabbitAndSteelWorld) -> None:
 def create_all_regions(world: RabbitAndSteelWorld) -> None:
     lobby = Region("Lobby", world.player, world.multiworld)
     kingdom_outskirts = Region("Kingdom Outskirts", world.player, world.multiworld)
+    crack_in_the_geode = Region("Crack in the Geode", world.player, world.multiworld)
 
-    regions = [lobby, kingdom_outskirts]
+    regions = [lobby, kingdom_outskirts, crack_in_the_geode]
 
     # Creates all remaining base regions: Scholar's Nest - Moonlit Pinnacle
     for kingdom_name in Items.kingdom_names:
@@ -32,6 +36,10 @@ def create_all_regions(world: RabbitAndSteelWorld) -> None:
     for class_names in world.options.checks_per_class:
         region = Region("Kingdom Outskirts - " + class_names, world.player, world.multiworld)
         regions.append(region)
+
+    for class_names in world.options.checks_per_class:
+           region = Region("Crack in the Geode - " + class_names, world.player, world.multiworld)
+           regions.append(region)
 
     # Creates the regions for the class checks for the regions Scholar's Nest - The Pale Keep
     if world.options.checks_per_class:
@@ -69,6 +77,9 @@ def connect_regions(world: RabbitAndSteelWorld) -> None:
     kingdom_outskirts = world.get_region("Kingdom Outskirts")
     lobby.connect(kingdom_outskirts, "Lobby to Kingdom Outskirts")
 
+    crack_in_the_geode = world.get_region("Crack in the Geode")
+    lobby.connect(crack_in_the_geode, "Lobby to Crack in the Geode")
+
     # Connects the regions Scholar's Nest - The Pale Keep to Kingdom Outskirts
     for kingdom_name in Items.kingdom_names:
         if kingdom_name == "Moonlit Pinnacle":
@@ -76,7 +87,11 @@ def connect_regions(world: RabbitAndSteelWorld) -> None:
 
         if kingdom_name not in world.options.excluded_kingdoms:
             kingdom_region = world.get_region(kingdom_name)
-            kingdom_outskirts.connect(kingdom_region, "Kingdom Outskirts to " + kingdom_name)
+            if kingdom_name in outskirts_kingdoms:
+                kingdom_outskirts.connect(kingdom_region, "Kingdom Outskirts to " + kingdom_name)
+            elif kingdom_name in crack_kingdoms:
+                crack_in_the_geode.connect(kingdom_region, "Crack in the Geode to " + kingdom_name)
+
 
     # Connects The Pale Keep to the Moonlit Pinnacle
     pale_keep = world.get_region("The Pale Keep")
@@ -88,6 +103,9 @@ def connect_regions(world: RabbitAndSteelWorld) -> None:
     for class_names in world.options.checks_per_class:
         region = world.get_region("Kingdom Outskirts - " + class_names)
         kingdom_outskirts.connect(region, "Kingdom Outskirts - " + class_names)
+
+        region = world.get_region("Crack in the Geode - " + class_names)
+        kingdom_outskirts.connect(region, "Crack in the Geode - " + class_names)
 
     # Connects the regions for the class checks for the regions Scholar's Nest - The Pale Keep to their parent region
     if world.options.checks_per_class:

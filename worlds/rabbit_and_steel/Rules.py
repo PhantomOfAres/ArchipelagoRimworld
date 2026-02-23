@@ -18,6 +18,9 @@ ARSNEAL = "King's Arsenal"
 DARKHOUSE = "Red Darkhouse"
 STREETS = "Churchmouse Streets"
 LAKESIDE = "Emerald Lakeside"
+DEPTHS = "Darkhouse Depths"
+ATELIER = "Atelier Aurum"
+SANCTUM = "Subterra Sanctum"
 KEEP = "The Pale Keep"
 PINNACLE = "Moonlit Pinnacle"
 
@@ -31,6 +34,10 @@ SNIPER = "Sniper"
 BRUISER = "Bruiser"
 DEFENDER = "Defender"
 ANCIENT = "Ancient"
+HAMMERMAID = "Hammermaid"
+PYROMANCER = "Pyromancer"
+GRENADIER = "Grenadier"
+SHADOW = "Shadow"
 
 
 def set_all_rules(world: RabbitAndSteelWorld) -> None:
@@ -100,6 +107,18 @@ def set_all_entrance_rules(world: RabbitAndSteelWorld) -> None:
     if LAKESIDE not in excluded_kingdoms:
         outskirts_to_emerald = world.get_entrance("Kingdom Outskirts to " + LAKESIDE)
         set_rule(outskirts_to_emerald, lambda state: set_kingdoms_connection_rules(state, LAKESIDE))
+
+    if DEPTHS not in excluded_kingdoms:
+        crack_to_depths = world.get_entrance("Crack in the Geode to " + DEPTHS)
+        set_rule(crack_to_depths, lambda state: set_kingdoms_connection_rules(state, DEPTHS))
+
+    if ATELIER not in excluded_kingdoms:
+        crack_to_atelier = world.get_entrance("Crack in the Geode to " + ATELIER)
+        set_rule(crack_to_atelier, lambda state: set_kingdoms_connection_rules(state, ATELIER))
+
+    if SANCTUM not in excluded_kingdoms:
+        crack_to_sanctum = world.get_entrance("Crack in the Geode to " + SANCTUM)
+        set_rule(crack_to_sanctum, lambda state: set_kingdoms_connection_rules(state, SANCTUM))
 
     # Set the entrance rule for kingdom outskirts to The Pale Keep
     outskirts_to_pale = world.get_entrance("Kingdom Outskirts to " + KEEP)
@@ -279,6 +298,62 @@ def set_all_entrance_rules(world: RabbitAndSteelWorld) -> None:
                     kingdom_to_class = world.get_entrance(kingdom_name + " - " + ANCIENT)
                     set_rule(kingdom_to_class, lambda state: state.has(ANCIENT, world.player))
 
+        if HAMMERMAID in checks_per_class:
+            outskirts_to_class = world.get_entrance("Kingdom Outskirts - " + HAMMERMAID)
+            set_rule(outskirts_to_class, lambda state: state.has(HAMMERMAID, world.player))
+
+            # Set the remaining kingdoms rules
+            for kingdom_name in Items.kingdom_names:
+                # Skip Moonlit Pinnacle as it has special class rules
+                if kingdom_name == PINNACLE:
+                    continue
+
+                if kingdom_name not in excluded_kingdoms:
+                    kingdom_to_class = world.get_entrance(kingdom_name + " - " + HAMMERMAID)
+                    set_rule(kingdom_to_class, lambda state: state.has(HAMMERMAID, world.player))
+
+        if PYROMANCER in checks_per_class:
+            outskirts_to_class = world.get_entrance("Kingdom Outskirts - " + PYROMANCER)
+            set_rule(outskirts_to_class, lambda state: state.has(PYROMANCER, world.player))
+
+            # Set the remaining kingdoms rules
+            for kingdom_name in Items.kingdom_names:
+                # Skip Moonlit Pinnacle as it has special class rules
+                if kingdom_name == PINNACLE:
+                    continue
+
+                if kingdom_name not in excluded_kingdoms:
+                    kingdom_to_class = world.get_entrance(kingdom_name + " - " + PYROMANCER)
+                    set_rule(kingdom_to_class, lambda state: state.has(PYROMANCER, world.player))
+
+        if GRENADIER in checks_per_class:
+            outskirts_to_class = world.get_entrance("Kingdom Outskirts - " + GRENADIER)
+            set_rule(outskirts_to_class, lambda state: state.has(GRENADIER, world.player))
+
+            # Set the remaining kingdoms rules
+            for kingdom_name in Items.kingdom_names:
+                # Skip Moonlit Pinnacle as it has special class rules
+                if kingdom_name == PINNACLE:
+                    continue
+
+                if kingdom_name not in excluded_kingdoms:
+                    kingdom_to_class = world.get_entrance(kingdom_name + " - " + GRENADIER)
+                    set_rule(kingdom_to_class, lambda state: state.has(GRENADIER, world.player))
+
+        if SHADOW in checks_per_class:
+            outskirts_to_class = world.get_entrance("Kingdom Outskirts - " + SHADOW)
+            set_rule(outskirts_to_class, lambda state: state.has(SHADOW, world.player))
+
+            # Set the remaining kingdoms rules
+            for kingdom_name in Items.kingdom_names:
+                # Skip Moonlit Pinnacle as it has special class rules
+                if kingdom_name == PINNACLE:
+                    continue
+
+                if kingdom_name not in excluded_kingdoms:
+                    kingdom_to_class = world.get_entrance(kingdom_name + " - " + SHADOW)
+                    set_rule(kingdom_to_class, lambda state: state.has(SHADOW, world.player))
+
     # Find the classes that will have checks in the Moonlit Pinnacle
     moonlit_classes = []
     if world.options.goal_condition == world.options.goal_condition.option_shira:
@@ -332,6 +407,22 @@ def set_all_entrance_rules(world: RabbitAndSteelWorld) -> None:
         if ANCIENT in moonlit_classes:
             class_moonlit = world.get_entrance("Moonlit Pinnacle - " + ANCIENT)
             set_rule(class_moonlit, lambda state: state.has(ANCIENT, world.player))
+
+        if HAMMERMAID in moonlit_classes:
+            class_moonlit = world.get_entrance("Moonlit Pinnacle - " + HAMMERMAID)
+            set_rule(class_moonlit, lambda state: state.has(HAMMERMAID, world.player))
+
+        if PYROMANCER in moonlit_classes:
+            class_moonlit = world.get_entrance("Moonlit Pinnacle - " + PYROMANCER)
+            set_rule(class_moonlit, lambda state: state.has(PYROMANCER, world.player))
+
+        if GRENADIER in moonlit_classes:
+            class_moonlit = world.get_entrance("Moonlit Pinnacle - " + GRENADIER)
+            set_rule(class_moonlit, lambda state: state.has(GRENADIER, world.player))
+
+        if SHADOW in moonlit_classes:
+            class_moonlit = world.get_entrance("Moonlit Pinnacle - " + SHADOW)
+            set_rule(class_moonlit, lambda state: state.has(SHADOW, world.player))
 
 
 def set_all_location_rules(world: RabbitAndSteelWorld) -> None:

@@ -126,14 +126,14 @@ item_id = 1
 
 kingdom_names = [
     "Scholar's Nest", "King's Arsenal", "Red Darkhouse", "Churchmouse Streets", "Emerald Lakeside", "The Pale Keep",
-    "Moonlit Pinnacle"]
+    "Moonlit Pinnacle", "Darkhouse Depths", "Subterra Sanctum", "Atelier Aurum"]
 kingdom_items = {}
 for item in kingdom_names:
     kingdom_items[item] = item_id
     item_id += 1
 
 class_names = ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender",
-               "Ancient"]
+               "Ancient", "Hammermaid", "Pyromancer", "Grenadier", "Shadow"]
 class_items = {}
 for item in class_names:
     class_items[item] = item_id
@@ -178,7 +178,8 @@ for item in potion_names:
 shira_defeat_names = [
     "Victory - Wizard", "Victory - Assassin", "Victory - Heavyblade", "Victory - Dancer", "Victory - Druid",
     "Victory - Spellsword",
-    "Victory - Sniper", "Victory - Bruiser", "Victory - Defender", "Victory - Ancient"]
+    "Victory - Sniper", "Victory - Bruiser", "Victory - Defender", "Victory - Ancient", "Victory - Hammermaid",
+    "Victory - Pyromancer", "Victory - Grenadier", "Victory - Shadow"]
 shira_defeat_items = {}
 for item in shira_defeat_names:
     shira_defeat_items[item] = item_id
