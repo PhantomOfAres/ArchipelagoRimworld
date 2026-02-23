@@ -723,7 +723,7 @@ kingdom_to_shop_locations = {"Scholar's Nest": scholars_nest_shop_table,
 # Dictionary that contains all the locations
 location_table = kingdom_outskirts_table | scholars_nest_table | kings_arsenal_table | red_darkhouse_table | \
                  churchmouse_streets_table | emerald_lakeside_table | pale_keep_table | moonlit_pinnacle_table | \
-                 crack_in_the_geode_table | darkhouse_depths_table | subterra_sanctum_shop_table | atelier_aurum_table | \
+                 crack_in_the_geode_table | darkhouse_depths_table | subterra_sanctum_table | atelier_aurum_table | \
                  kingdom_outskirts_chest_item_table | crack_in_the_geode_chest_item_table | scholars_nest_chest_item_table | kings_arsenal_chest_item_table | \
                  red_darkhouse_chest_item_table | churchmouse_streets_chest_item_table | emerald_lakeside_chest_item_table | pale_keep_chest_item_table | \
                  darkhouse_depths_chest_item_table | atelier_aurum_chest_item_table | subterra_sanctum_chest_item_table | \
