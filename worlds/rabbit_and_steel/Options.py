@@ -81,6 +81,9 @@ class KingdomOrder(OptionCounter):
         "Red Darkhouse",
         "Churchmouse Streets",
         "Emerald Lakeside",
+        "Darkhouse Depths",
+        "Atelier Aurum",
+        "Subterra Sanctum"
     ])
     default = {
         "Scholar's Nest": 0,
@@ -88,6 +91,9 @@ class KingdomOrder(OptionCounter):
         "Red Darkhouse": 0,
         "Churchmouse Streets": 0,
         "Emerald Lakeside": 0,
+        "Darkhouse Depths": 0,
+        "Atelier Aurum": 0,
+        "Subterra Sanctum": 0
     }
 
 
@@ -103,7 +109,7 @@ class ExcludeClass(OptionSet):
     What class, if any, should not be accounted for in logic.
     Throughout the run you will not be able to play that class at all.
     Avaliable Options:
-    ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]
+    ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient", "Hammermaid", "Pyromancer", "Grenadier", "Shadow"]
     """
     display_name = "Exclude Class"
     valid_keys = class_items.keys()
@@ -114,7 +120,7 @@ class ChecksPerClass(OptionSet):
     What classes should have locations associated with them.
     There will always be a generic location that any class can obtain.
     Available Options:
-    ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient"]
+    ["Wizard", "Assassin", "Heavyblade", "Dancer", "Druid", "Spellsword", "Sniper", "Bruiser", "Defender", "Ancient", "Hammermaid", "Pyromancer", "Grenadier", "Shadow"]
     _ALL can be used to put checks on all classes
     """
     display_name = "Checks Per Class"

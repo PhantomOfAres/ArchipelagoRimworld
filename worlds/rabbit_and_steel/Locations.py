@@ -102,7 +102,7 @@ for location in outskirts_locations:
     kingdom_outskirts_table[location] = location_id
     location_id += 1
 
-# Locations that should be awarded during the run through Crack in the Hole
+# Locations that should be awarded during the run through Crack in the Geode
 crack_locations = ["Crack in the Geode Battle 1", "Crack in the Geode Chest 1", "Crack in the Geode Battle 2",
                        "Crack in the Geode Chest 2", "Crack in the Geode Battle 3"]
 crack_in_the_geode_table = {}
@@ -272,7 +272,7 @@ wizard_keep_table = create_class_kingdom_locations("Wizard", pale_keep_table)
 wizard_pinnacle_table = create_class_kingdom_locations("Wizard", moonlit_pinnacle_table)
 wizard_tables = {
     "Kingdom Outskirts": wizard_outskirts_table,
-    "Crack in the Hole": wizard_crack_table,
+    "Crack in the Geode": wizard_crack_table,
     "Scholar's Nest": wizard_nest_table,
     "King's Arsenal": wizard_arsenal_table,
     "Red Darkhouse": wizard_darkhouse_table,
@@ -300,7 +300,7 @@ assassin_keep_table = create_class_kingdom_locations("Assassin", pale_keep_table
 assassin_pinnacle_table = create_class_kingdom_locations("Assassin", moonlit_pinnacle_table)
 assassin_tables = {
     "Kingdom Outskirts": assassin_outskirts_table,
-    "Crack in the Hole": assassin_crack_table,
+    "Crack in the Geode": assassin_crack_table,
     "Scholar's Nest": assassin_nest_table,
     "King's Arsenal": assassin_arsenal_table,
     "Red Darkhouse": assassin_darkhouse_table,
@@ -328,7 +328,7 @@ heavyblade_keep_table = create_class_kingdom_locations("Heavyblade", pale_keep_t
 heavyblade_pinnacle_table = create_class_kingdom_locations("Heavyblade", moonlit_pinnacle_table)
 heavyblade_tables = {
     "Kingdom Outskirts": heavyblade_outskirts_table,
-    "Crack in the Hole": heavyblade_crack_table,
+    "Crack in the Geode": heavyblade_crack_table,
     "Scholar's Nest": heavyblade_nest_table,
     "King's Arsenal": heavyblade_arsenal_table,
     "Red Darkhouse": heavyblade_darkhouse_table,
@@ -356,7 +356,7 @@ dancer_keep_table = create_class_kingdom_locations("Dancer", pale_keep_table)
 dancer_pinnacle_table = create_class_kingdom_locations("Dancer", moonlit_pinnacle_table)
 dancer_tables = {
     "Kingdom Outskirts": dancer_outskirts_table,
-    "Crack in the Hole": dancer_crack_table,
+    "Crack in the Geode": dancer_crack_table,
     "Scholar's Nest": dancer_nest_table,
     "King's Arsenal": dancer_arsenal_table,
     "Red Darkhouse": dancer_darkhouse_table,
@@ -384,7 +384,7 @@ druid_keep_table = create_class_kingdom_locations("Druid", pale_keep_table)
 druid_pinnacle_table = create_class_kingdom_locations("Druid", moonlit_pinnacle_table)
 druid_tables = {
     "Kingdom Outskirts": druid_outskirts_table,
-    "Crack in the Hole": druid_crack_table,
+    "Crack in the Geode": druid_crack_table,
     "Scholar's Nest": druid_nest_table,
     "King's Arsenal": druid_arsenal_table,
     "Red Darkhouse": druid_darkhouse_table,
@@ -412,7 +412,7 @@ spellsword_keep_table = create_class_kingdom_locations("Spellsword", pale_keep_t
 spellsword_pinnacle_table = create_class_kingdom_locations("Spellsword", moonlit_pinnacle_table)
 spellsword_tables = {
     "Kingdom Outskirts": spellsword_outskirts_table,
-    "Crack in the Hole": spellsword_crack_table,
+    "Crack in the Geode": spellsword_crack_table,
     "Scholar's Nest": spellsword_nest_table,
     "King's Arsenal": spellsword_arsenal_table,
     "Red Darkhouse": spellsword_darkhouse_table,
@@ -440,7 +440,7 @@ sniper_keep_table = create_class_kingdom_locations("Sniper", pale_keep_table)
 sniper_pinnacle_table = create_class_kingdom_locations("Sniper", moonlit_pinnacle_table)
 sniper_tables = {
     "Kingdom Outskirts": sniper_outskirts_table,
-    "Crack in the Hole": sniper_crack_table,
+    "Crack in the Geode": sniper_crack_table,
     "Scholar's Nest": sniper_nest_table,
     "King's Arsenal": sniper_arsenal_table,
     "Red Darkhouse": sniper_darkhouse_table,
@@ -468,7 +468,7 @@ bruiser_keep_table = create_class_kingdom_locations("Bruiser", pale_keep_table)
 bruiser_pinnacle_table = create_class_kingdom_locations("Bruiser", moonlit_pinnacle_table)
 bruiser_tables = {
     "Kingdom Outskirts": bruiser_outskirts_table,
-    "Crack in the Hole": bruiser_crack_table,
+    "Crack in the Geode": bruiser_crack_table,
     "Scholar's Nest": bruiser_nest_table,
     "King's Arsenal": bruiser_arsenal_table,
     "Red Darkhouse": bruiser_darkhouse_table,
@@ -496,7 +496,7 @@ defender_keep_table = create_class_kingdom_locations("Defender", pale_keep_table
 defender_pinnacle_table = create_class_kingdom_locations("Defender", moonlit_pinnacle_table)
 defender_tables = {
     "Kingdom Outskirts": defender_outskirts_table,
-    "Crack in the Hole": defender_crack_table,
+    "Crack in the Geode": defender_crack_table,
     "Scholar's Nest": defender_nest_table,
     "King's Arsenal": defender_arsenal_table,
     "Red Darkhouse": defender_darkhouse_table,
@@ -524,7 +524,7 @@ ancient_keep_table = create_class_kingdom_locations("Ancient", pale_keep_table)
 ancient_pinnacle_table = create_class_kingdom_locations("Ancient", moonlit_pinnacle_table)
 ancient_tables = {
     "Kingdom Outskirts": ancient_outskirts_table,
-    "Crack in the Hole": ancient_crack_table,
+    "Crack in the Geode": ancient_crack_table,
     "Scholar's Nest": ancient_nest_table,
     "King's Arsenal": ancient_arsenal_table,
     "Red Darkhouse": ancient_darkhouse_table,
@@ -552,7 +552,7 @@ hammermaid_keep_table = create_class_kingdom_locations("Hammermaid", pale_keep_t
 hammermaid_pinnacle_table = create_class_kingdom_locations("Hammermaid", moonlit_pinnacle_table)
 hammermaid_tables = {
     "Kingdom Outskirts": hammermaid_outskirts_table,
-    "Crack in the Hole": hammermaid_crack_table,
+    "Crack in the Geode": hammermaid_crack_table,
     "Scholar's Nest": hammermaid_nest_table,
     "King's Arsenal": hammermaid_arsenal_table,
     "Red Darkhouse": hammermaid_darkhouse_table,
@@ -580,7 +580,7 @@ pyromancer_keep_table = create_class_kingdom_locations("Pyromancer", pale_keep_t
 pyromancer_pinnacle_table = create_class_kingdom_locations("Pyromancer", moonlit_pinnacle_table)
 pyromancer_tables = {
     "Kingdom Outskirts": pyromancer_outskirts_table,
-    "Crack in the Hole": pyromancer_crack_table,
+    "Crack in the Geode": pyromancer_crack_table,
     "Scholar's Nest": pyromancer_nest_table,
     "King's Arsenal": pyromancer_arsenal_table,
     "Red Darkhouse": pyromancer_darkhouse_table,
@@ -608,7 +608,7 @@ grenadier_keep_table = create_class_kingdom_locations("Grenadier", pale_keep_tab
 grenadier_pinnacle_table = create_class_kingdom_locations("Grenadier", moonlit_pinnacle_table)
 grenadier_tables = {
     "Kingdom Outskirts": grenadier_outskirts_table,
-    "Crack in the Hole": grenadier_crack_table,
+    "Crack in the Geode": grenadier_crack_table,
     "Scholar's Nest": grenadier_nest_table,
     "King's Arsenal": grenadier_arsenal_table,
     "Red Darkhouse": grenadier_darkhouse_table,
@@ -636,7 +636,7 @@ shadow_keep_table = create_class_kingdom_locations("Shadow", pale_keep_table)
 shadow_pinnacle_table = create_class_kingdom_locations("Shadow", moonlit_pinnacle_table)
 shadow_tables = {
     "Kingdom Outskirts": shadow_outskirts_table,
-    "Crack in the Hole": shadow_crack_table,
+    "Crack in the Geode": shadow_crack_table,
     "Scholar's Nest": shadow_nest_table,
     "King's Arsenal": shadow_arsenal_table,
     "Red Darkhouse": shadow_darkhouse_table,
