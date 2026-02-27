@@ -4923,21 +4923,6 @@
   <RimWorldArchipelago.ArchipelagoItemDef>
     <Id>395</Id>
     <DefType>ThingDef</DefType>
-    <defName>BloodWarmerThing</defName>
-    <TechLevel>Anomaly</TechLevel>
-    <label>Blood Warmer</label>
-    <RequiredExpansion>Ludeon.RimWorld.Anomaly</RequiredExpansion>
-    <StackSize>1</StackSize>
-    <Prerequisites>
-      <li>Ghoul Enhancements</li>
-      <li>Bioferrite Shaping</li>
-      <li>AnyElectricity</li>
-      <li>Fabrication</li>
-    </Prerequisites>
-  </RimWorldArchipelago.ArchipelagoItemDef>
-  <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>396</Id>
-    <DefType>ThingDef</DefType>
     <defName>PilotAssistantThing</defName>
     <TechLevel>Spacer</TechLevel>
     <label>Pilot Assistant</label>
@@ -4950,21 +4935,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>397</Id>
-    <DefType>ThingDef</DefType>
-    <defName>VacskinGlandThing</defName>
-    <TechLevel>HardToMake</TechLevel>
-    <label>Vacskin Gland</label>
-    <RequiredExpansion>Ludeon.RimWorld.Royalty</RequiredExpansion>
-    <StackSize>1</StackSize>
-    <Prerequisites>
-      <li>Skin Hardening</li>
-      <li>Fabrication</li>
-      <li>AnyElectricity</li>
-    </Prerequisites>
-  </RimWorldArchipelago.ArchipelagoItemDef>
-  <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>398</Id>
+    <Id>396</Id>
     <DefType>ThingDef</DefType>
     <defName>GravlitePanelThing</defName>
     <TechLevel>Spacer</TechLevel>
@@ -4978,7 +4949,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>399</Id>
+    <Id>397</Id>
     <DefType>ThingDef</DefType>
     <defName>Apparel_VacsuitHelmetThing</defName>
     <TechLevel>Industrial</TechLevel>
@@ -4993,7 +4964,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>400</Id>
+    <Id>398</Id>
     <DefType>ThingDef</DefType>
     <defName>Apparel_PackHunterThing</defName>
     <TechLevel>Industrial</TechLevel>
@@ -5008,7 +4979,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>401</Id>
+    <Id>399</Id>
     <DefType>ThingDef</DefType>
     <defName>Apparel_VacsuitThing</defName>
     <TechLevel>Industrial</TechLevel>
@@ -5023,7 +4994,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>402</Id>
+    <Id>400</Id>
     <DefType>ThingDef</DefType>
     <defName>Gun_BeamRepeaterThing</defName>
     <TechLevel>Spacer</TechLevel>
@@ -5037,7 +5008,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>403</Id>
+    <Id>401</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_FluIncident</defName>
     <label>Flu</label>
@@ -5048,7 +5019,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>404</Id>
+    <Id>402</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_PlagueIncident</defName>
     <label>Plague</label>
@@ -5059,7 +5030,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>405</Id>
+    <Id>403</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_MalariaIncident</defName>
     <label>Malaria</label>
@@ -5070,7 +5041,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>406</Id>
+    <Id>404</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_SleepingSicknessIncident</defName>
     <label>Sleeping Sickness</label>
@@ -5081,7 +5052,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>407</Id>
+    <Id>405</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_FibrousMechanitesIncident</defName>
     <label>Fibrous Mechanites</label>
@@ -5092,7 +5063,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>408</Id>
+    <Id>406</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_SensoryMechanitesIncident</defName>
     <label>Sensory Mechanites</label>
@@ -5103,7 +5074,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>409</Id>
+    <Id>407</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_GutWormsIncident</defName>
     <label>Gut Worms</label>
@@ -5114,7 +5085,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>410</Id>
+    <Id>408</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_MuscleParasitesIncident</defName>
     <label>Muscle Parasites</label>
@@ -5125,7 +5096,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>411</Id>
+    <Id>409</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_OrganDecayIncident</defName>
     <label>Organ Decay</label>
@@ -5136,7 +5107,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>412</Id>
+    <Id>410</Id>
     <DefType>IncidentDef</DefType>
     <defName>ShipChunkDropIncident</defName>
     <label>Ship Chunk Drop</label>
@@ -5147,7 +5118,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>413</Id>
+    <Id>411</Id>
     <DefType>IncidentDef</DefType>
     <defName>OrbitalTraderArrivalIncident</defName>
     <label>Orbital Trader Arrival</label>
@@ -5158,7 +5129,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>414</Id>
+    <Id>412</Id>
     <DefType>IncidentDef</DefType>
     <defName>TraderCaravanArrivalIncident</defName>
     <label>Trader Caravan Arrival</label>
@@ -5169,7 +5140,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>415</Id>
+    <Id>413</Id>
     <DefType>IncidentDef</DefType>
     <defName>VisitorGroupIncident</defName>
     <label>Visitor Group</label>
@@ -5180,7 +5151,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>416</Id>
+    <Id>414</Id>
     <DefType>IncidentDef</DefType>
     <defName>TravelerGroupIncident</defName>
     <label>Traveler Group</label>
@@ -5191,7 +5162,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>417</Id>
+    <Id>415</Id>
     <DefType>IncidentDef</DefType>
     <defName>RaidEnemyIncident</defName>
     <label>Enemy Raid</label>
@@ -5202,7 +5173,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>418</Id>
+    <Id>416</Id>
     <DefType>IncidentDef</DefType>
     <defName>InfestationIncident</defName>
     <label>Infestation</label>
@@ -5213,7 +5184,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>419</Id>
+    <Id>417</Id>
     <DefType>IncidentDef</DefType>
     <defName>ManhunterPackIncident</defName>
     <label>Manhunter Pack</label>
@@ -5224,7 +5195,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>420</Id>
+    <Id>418</Id>
     <DefType>IncidentDef</DefType>
     <defName>DefoliatorShipPartCrashIncident</defName>
     <label>Ship Part Crash (Defoliator)</label>
@@ -5235,7 +5206,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>421</Id>
+    <Id>419</Id>
     <DefType>IncidentDef</DefType>
     <defName>PsychicEmanatorShipPartCrashIncident</defName>
     <label>Ship Part Crash (Psychic)</label>
@@ -5246,7 +5217,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>422</Id>
+    <Id>420</Id>
     <DefType>IncidentDef</DefType>
     <defName>AnimalInsanityMassIncident</defName>
     <label>Mass Animal Insanity</label>
@@ -5257,7 +5228,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>423</Id>
+    <Id>421</Id>
     <DefType>IncidentDef</DefType>
     <defName>AnimalInsanitySingleIncident</defName>
     <label>Single Animal Insanity</label>
@@ -5268,7 +5239,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>424</Id>
+    <Id>422</Id>
     <DefType>IncidentDef</DefType>
     <defName>MechClusterIncident</defName>
     <label>Mech Cluster</label>
@@ -5279,7 +5250,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>425</Id>
+    <Id>423</Id>
     <DefType>IncidentDef</DefType>
     <defName>CaravanArrivalTributeCollectorIncident</defName>
     <label>Tribute Collector Caravan Arrival</label>
@@ -5290,7 +5261,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>426</Id>
+    <Id>424</Id>
     <DefType>IncidentDef</DefType>
     <defName>ProblemCauserIncident</defName>
     <label>Problem Causer</label>
@@ -5301,7 +5272,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>427</Id>
+    <Id>425</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_AbasiaIncident</defName>
     <label>Paralytic Abasia</label>
@@ -5312,7 +5283,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>428</Id>
+    <Id>426</Id>
     <DefType>IncidentDef</DefType>
     <defName>Disease_BloodRotIncident</defName>
     <label>Blood Rot</label>
@@ -5323,7 +5294,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>429</Id>
+    <Id>427</Id>
     <DefType>IncidentDef</DefType>
     <defName>UnnaturalDarknessIncident</defName>
     <label>Unnatural Darkness</label>
@@ -5334,7 +5305,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>430</Id>
+    <Id>428</Id>
     <DefType>IncidentDef</DefType>
     <defName>DeathPallIncident</defName>
     <label>Death Pall</label>
@@ -5345,7 +5316,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>431</Id>
+    <Id>429</Id>
     <DefType>IncidentDef</DefType>
     <defName>WarpedObelisk_MutatorIncident</defName>
     <label>Twisted Obelisk</label>
@@ -5356,7 +5327,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>432</Id>
+    <Id>430</Id>
     <DefType>IncidentDef</DefType>
     <defName>WarpedObelisk_DuplicatorIncident</defName>
     <label>Corrupted Obelisk</label>
@@ -5367,7 +5338,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>433</Id>
+    <Id>431</Id>
     <DefType>IncidentDef</DefType>
     <defName>WarpedObelisk_AbductorIncident</defName>
     <label>Warped Obelisk</label>
@@ -5378,7 +5349,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>434</Id>
+    <Id>432</Id>
     <DefType>IncidentDef</DefType>
     <defName>NociosphereIncident</defName>
     <label>Nociosphere</label>
@@ -5389,7 +5360,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>435</Id>
+    <Id>433</Id>
     <DefType>IncidentDef</DefType>
     <defName>PitGateIncident</defName>
     <label>Pit Gate</label>
@@ -5400,7 +5371,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>436</Id>
+    <Id>434</Id>
     <DefType>IncidentDef</DefType>
     <defName>FleshmassHeartIncident</defName>
     <label>Fleshmass Heart</label>
@@ -5411,7 +5382,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>437</Id>
+    <Id>435</Id>
     <DefType>IncidentDef</DefType>
     <defName>BloodRainIncident</defName>
     <label>Blood Rain</label>
@@ -5422,7 +5393,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>438</Id>
+    <Id>436</Id>
     <DefType>IncidentDef</DefType>
     <defName>ShamblerSwarmIncident</defName>
     <label>Shambler Swarm</label>
@@ -5433,7 +5404,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>439</Id>
+    <Id>437</Id>
     <DefType>IncidentDef</DefType>
     <defName>ShamblerSwarmAnimalsIncident</defName>
     <label>Shambler Swarm</label>
@@ -5444,7 +5415,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>440</Id>
+    <Id>438</Id>
     <DefType>IncidentDef</DefType>
     <defName>SmallShamblerSwarmIncident</defName>
     <label>Shambler Swarm</label>
@@ -5455,7 +5426,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>441</Id>
+    <Id>439</Id>
     <DefType>IncidentDef</DefType>
     <defName>SightstealerSwarmIncident</defName>
     <label>Sightstealer Swarm</label>
@@ -5466,7 +5437,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>442</Id>
+    <Id>440</Id>
     <DefType>IncidentDef</DefType>
     <defName>ShamblerAssaultIncident</defName>
     <label>Shambler Assault</label>
@@ -5477,7 +5448,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>443</Id>
+    <Id>441</Id>
     <DefType>IncidentDef</DefType>
     <defName>GhoulAttackIncident</defName>
     <label>Ghoul Attacking</label>
@@ -5488,7 +5459,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>444</Id>
+    <Id>442</Id>
     <DefType>IncidentDef</DefType>
     <defName>RevenantIncident</defName>
     <label>Revenant</label>
@@ -5499,7 +5470,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>445</Id>
+    <Id>443</Id>
     <DefType>IncidentDef</DefType>
     <defName>SightstealerArrivalIncident</defName>
     <label>Sightstealer Arrival</label>
@@ -5510,7 +5481,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>446</Id>
+    <Id>444</Id>
     <DefType>IncidentDef</DefType>
     <defName>PsychicRitualSiegeIncident</defName>
     <label>Psychic Ritual Siege</label>
@@ -5521,7 +5492,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>447</Id>
+    <Id>445</Id>
     <DefType>IncidentDef</DefType>
     <defName>HateChantersIncident</defName>
     <label>Hate Chanters</label>
@@ -5532,7 +5503,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>448</Id>
+    <Id>446</Id>
     <DefType>IncidentDef</DefType>
     <defName>FrenziedAnimalsIncident</defName>
     <label>Frenzied Animals</label>
@@ -5543,7 +5514,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>449</Id>
+    <Id>447</Id>
     <DefType>IncidentDef</DefType>
     <defName>FleshbeastAttackIncident</defName>
     <label>Fleshbeast Attack</label>
@@ -5554,7 +5525,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>450</Id>
+    <Id>448</Id>
     <DefType>IncidentDef</DefType>
     <defName>GorehulkAssaultIncident</defName>
     <label>Gorehulk Assault</label>
@@ -5565,7 +5536,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>451</Id>
+    <Id>449</Id>
     <DefType>IncidentDef</DefType>
     <defName>DevourerAssaultIncident</defName>
     <label>Devourer Assault</label>
@@ -5576,7 +5547,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>452</Id>
+    <Id>450</Id>
     <DefType>IncidentDef</DefType>
     <defName>DevourerWaterAssaultIncident</defName>
     <label>Devourer Assault</label>
@@ -5587,7 +5558,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>453</Id>
+    <Id>451</Id>
     <DefType>IncidentDef</DefType>
     <defName>ChimeraAssaultIncident</defName>
     <label>Chimera Assault</label>
@@ -5598,7 +5569,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>454</Id>
+    <Id>452</Id>
     <DefType>IncidentDef</DefType>
     <defName>ArchipelagoSculpturePodIncident</defName>
     <label>Archipelago Sculpture</label>
@@ -5609,7 +5580,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>455</Id>
+    <Id>453</Id>
     <DefType>IncidentDef</DefType>
     <defName>ArchipelagoColonistPodIncident</defName>
     <label>Colonist</label>
@@ -5619,7 +5590,7 @@
     </Tags>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>456</Id>
+    <Id>454</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DiningChairBuilding</defName>
     <label>Dining Chair</label>
@@ -5629,7 +5600,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>457</Id>
+    <Id>455</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ArmchairBuilding</defName>
     <label>Armchair</label>
@@ -5639,7 +5610,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>458</Id>
+    <Id>456</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>CouchBuilding</defName>
     <label>Couch</label>
@@ -5649,7 +5620,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>459</Id>
+    <Id>457</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>EndTableBuilding</defName>
     <label>End Table</label>
@@ -5659,7 +5630,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>460</Id>
+    <Id>458</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>StandingLampBuilding</defName>
     <label>Standing Lamp</label>
@@ -5670,7 +5641,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>461</Id>
+    <Id>459</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SunLampBuilding</defName>
     <label>Sun Lamp</label>
@@ -5681,7 +5652,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>462</Id>
+    <Id>460</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FloodLightBuilding</defName>
     <label>Flood Light</label>
@@ -5692,7 +5663,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>463</Id>
+    <Id>461</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ShelfBuilding</defName>
     <label>Shelf</label>
@@ -5702,7 +5673,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>464</Id>
+    <Id>462</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ShelfSmallBuilding</defName>
     <label>Small Shelf</label>
@@ -5712,7 +5683,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>465</Id>
+    <Id>463</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BookcaseBuilding</defName>
     <label>Bookcase</label>
@@ -5722,7 +5693,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>466</Id>
+    <Id>464</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BookcaseSmallBuilding</defName>
     <label>Small Bookcase</label>
@@ -5732,7 +5703,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>467</Id>
+    <Id>465</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DresserBuilding</defName>
     <label>Dresser</label>
@@ -5742,7 +5713,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>468</Id>
+    <Id>466</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ChessTableBuilding</defName>
     <label>Chess Table</label>
@@ -5752,7 +5723,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>469</Id>
+    <Id>467</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PokerTableBuilding</defName>
     <label>Poker Table</label>
@@ -5762,7 +5733,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>470</Id>
+    <Id>468</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BilliardsTableBuilding</defName>
     <label>Billiards Table</label>
@@ -5772,7 +5743,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>471</Id>
+    <Id>469</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TubeTelevisionBuilding</defName>
     <label>Tube Television</label>
@@ -5785,7 +5756,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>472</Id>
+    <Id>470</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FlatscreenTelevisionBuilding</defName>
     <label>Flatscreen Television</label>
@@ -5798,7 +5769,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>473</Id>
+    <Id>471</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>OrbitalTradeBeaconBuilding</defName>
     <label>Orbital Trade Beacon</label>
@@ -5811,7 +5782,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>474</Id>
+    <Id>472</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>CommsConsoleBuilding</defName>
     <label>Comms Console</label>
@@ -5824,7 +5795,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>475</Id>
+    <Id>473</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FirefoamPopperBuilding</defName>
     <label>Firefoam Popper</label>
@@ -5837,7 +5808,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>476</Id>
+    <Id>474</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>MoisturePumpBuilding</defName>
     <label>Moisture Pump</label>
@@ -5850,7 +5821,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>477</Id>
+    <Id>475</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GroundPenetratingScannerBuilding</defName>
     <label>Ground-Penetrating Scanner</label>
@@ -5864,7 +5835,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>478</Id>
+    <Id>476</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>LongRangeMineralScannerBuilding</defName>
     <label>Long-Range Mineral Scanner</label>
@@ -5878,7 +5849,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>479</Id>
+    <Id>477</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PodLauncherBuilding</defName>
     <label>Pod Launcher</label>
@@ -5891,7 +5862,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>480</Id>
+    <Id>478</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TransportPodBuilding</defName>
     <label>Transport Pod</label>
@@ -5904,7 +5875,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>481</Id>
+    <Id>479</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>MultiAnalyzerBuilding</defName>
     <label>Multi-Analyzer</label>
@@ -5917,7 +5888,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>482</Id>
+    <Id>480</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>VitalsMonitorBuilding</defName>
     <label>Vitals Monitor</label>
@@ -5930,7 +5901,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>483</Id>
+    <Id>481</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ToolCabinetBuilding</defName>
     <label>Tool Cabinet</label>
@@ -5942,7 +5913,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>484</Id>
+    <Id>482</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SarcophagusBuilding</defName>
     <label>Sarcophagus</label>
@@ -5952,7 +5923,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>485</Id>
+    <Id>483</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>CryptosleepCasketBuilding</defName>
     <label>Cryptosleep Casket</label>
@@ -5966,7 +5937,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>486</Id>
+    <Id>484</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SteleLargeBuilding</defName>
     <label>Large Stele</label>
@@ -5976,7 +5947,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>487</Id>
+    <Id>485</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SteleGrandBuilding</defName>
     <label>Grand Stele</label>
@@ -5986,7 +5957,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>488</Id>
+    <Id>486</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PowerSwitchBuilding</defName>
     <label>Power Switch</label>
@@ -5998,7 +5969,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>489</Id>
+    <Id>487</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>WoodFiredGeneratorBuilding</defName>
     <label>Wood-Fired Generator</label>
@@ -6010,7 +5981,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>490</Id>
+    <Id>488</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ChemfuelPoweredGeneratorBuilding</defName>
     <label>Chemfuel Powered Generator</label>
@@ -6022,7 +5993,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>491</Id>
+    <Id>489</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>WindTurbineBuilding</defName>
     <label>Wind Turbine</label>
@@ -6034,7 +6005,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>492</Id>
+    <Id>490</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BatteryBuilding</defName>
     <label>Battery</label>
@@ -6047,7 +6018,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>493</Id>
+    <Id>491</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SolarGeneratorBuilding</defName>
     <label>Solar Generator</label>
@@ -6060,7 +6031,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>494</Id>
+    <Id>492</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GeothermalGeneratorBuilding</defName>
     <label>Geothermal Generator</label>
@@ -6073,7 +6044,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>495</Id>
+    <Id>493</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HandTailoringBenchBuilding</defName>
     <label>Hand Tailor Bench</label>
@@ -6083,7 +6054,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>496</Id>
+    <Id>494</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectricTailoringBenchBuilding</defName>
     <label>Electric Tailor Bench</label>
@@ -6096,7 +6067,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>497</Id>
+    <Id>495</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FueledSmithyBuilding</defName>
     <label>Fueled Smithy</label>
@@ -6108,7 +6079,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>498</Id>
+    <Id>496</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectricSmithyBuilding</defName>
     <label>Electric Smithy</label>
@@ -6121,7 +6092,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>499</Id>
+    <Id>497</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TableMachiningBuilding</defName>
     <label>Machining Table</label>
@@ -6134,7 +6105,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>500</Id>
+    <Id>498</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectricStoveBuilding</defName>
     <label>Electric Stove</label>
@@ -6146,7 +6117,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>501</Id>
+    <Id>499</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TableStonecutterBuilding</defName>
     <label>Stonecutter's Table</label>
@@ -6158,7 +6129,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>502</Id>
+    <Id>500</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BreweryBuilding</defName>
     <label>Brewery</label>
@@ -6170,7 +6141,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>503</Id>
+    <Id>501</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DrugLabBuilding</defName>
     <label>Drug Lab</label>
@@ -6183,7 +6154,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>504</Id>
+    <Id>502</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectricSmelterBuilding</defName>
     <label>Electric Smelter</label>
@@ -6195,7 +6166,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>505</Id>
+    <Id>503</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BiofuelRefineryBuilding</defName>
     <label>Biofuel Refinery</label>
@@ -6208,7 +6179,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>506</Id>
+    <Id>504</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FabricationBenchBuilding</defName>
     <label>Fabrication Bench</label>
@@ -6221,7 +6192,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>507</Id>
+    <Id>505</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HiTechResearchBenchBuilding</defName>
     <label>Hi-Tech Research Bench</label>
@@ -6234,7 +6205,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>508</Id>
+    <Id>506</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectricCrematoriumBuilding</defName>
     <label>Electric Crematorium</label>
@@ -6246,7 +6217,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>509</Id>
+    <Id>507</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HydroponicsBasinBuilding</defName>
     <label>Hydroponics Basin</label>
@@ -6259,7 +6230,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>510</Id>
+    <Id>508</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FermentingBarrelBuilding</defName>
     <label>Fermenting Barrel</label>
@@ -6271,7 +6242,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>511</Id>
+    <Id>509</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DeepDrillBuilding</defName>
     <label>Deep Drill</label>
@@ -6284,7 +6255,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>512</Id>
+    <Id>510</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>NutrientPasteDispenserBuilding</defName>
     <label>Nutrient Paste Dispenser</label>
@@ -6297,7 +6268,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>513</Id>
+    <Id>511</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HopperBuilding</defName>
     <label>Hopper</label>
@@ -6309,7 +6280,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>514</Id>
+    <Id>512</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_HighExplosiveBuilding</defName>
     <label>IED Trap</label>
@@ -6322,7 +6293,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>515</Id>
+    <Id>513</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_IncendiaryBuilding</defName>
     <label>IED Incendiary Trap</label>
@@ -6335,7 +6306,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>516</Id>
+    <Id>514</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_EMPBuilding</defName>
     <label>IED EMP Trap</label>
@@ -6349,7 +6320,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>517</Id>
+    <Id>515</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_SmokeBuilding</defName>
     <label>IED Smoke Trap</label>
@@ -6362,7 +6333,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>518</Id>
+    <Id>516</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_FirefoamBuilding</defName>
     <label>IED Firefoam Trap</label>
@@ -6375,7 +6346,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>519</Id>
+    <Id>517</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Turret_MiniTurretBuilding</defName>
     <label>Mini-Turret</label>
@@ -6388,7 +6359,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>520</Id>
+    <Id>518</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Turret_AutocannonBuilding</defName>
     <label>Autocannon Turret</label>
@@ -6401,7 +6372,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>521</Id>
+    <Id>519</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Turret_SniperBuilding</defName>
     <label>Uranium Slug Turret</label>
@@ -6414,7 +6385,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>522</Id>
+    <Id>520</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Turret_MortarBuilding</defName>
     <label>Mortar</label>
@@ -6427,7 +6398,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>523</Id>
+    <Id>521</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Turret_FoamTurretBuilding</defName>
     <label>Foam Turret</label>
@@ -6441,7 +6412,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>524</Id>
+    <Id>522</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Turret_RocketswarmLauncherBuilding</defName>
     <label>Rocketswarm Launcher</label>
@@ -6455,7 +6426,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>525</Id>
+    <Id>523</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Ship_BeamBuilding</defName>
     <label>Ship Structural Beam</label>
@@ -6469,7 +6440,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>526</Id>
+    <Id>524</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Ship_CryptosleepCasketBuilding</defName>
     <label>Ship Cryptosleep Casket</label>
@@ -6483,7 +6454,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>527</Id>
+    <Id>525</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Ship_ReactorBuilding</defName>
     <label>Ship Reactor</label>
@@ -6497,7 +6468,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>528</Id>
+    <Id>526</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Ship_EngineBuilding</defName>
     <label>Ship Engine</label>
@@ -6511,7 +6482,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>529</Id>
+    <Id>527</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Ship_SensorClusterBuilding</defName>
     <label>Sensor Cluster</label>
@@ -6525,7 +6496,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>530</Id>
+    <Id>528</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>AutodoorBuilding</defName>
     <label>Autodoor</label>
@@ -6538,7 +6509,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>531</Id>
+    <Id>529</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PassiveCoolerBuilding</defName>
     <label>Passive Cooler</label>
@@ -6548,7 +6519,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>532</Id>
+    <Id>530</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HeaterBuilding</defName>
     <label>Heater</label>
@@ -6560,7 +6531,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>533</Id>
+    <Id>531</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>CoolerBuilding</defName>
     <label>Cooler</label>
@@ -6573,7 +6544,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>534</Id>
+    <Id>532</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>VentBuilding</defName>
     <label>Vent</label>
@@ -6585,7 +6556,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>535</Id>
+    <Id>533</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DrapeBuilding</defName>
     <label>Drape</label>
@@ -6595,7 +6566,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>536</Id>
+    <Id>534</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BrazierBuilding</defName>
     <label>Brazier</label>
@@ -6605,7 +6576,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>537</Id>
+    <Id>535</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DarklightBrazierBuilding</defName>
     <label>Darklight Brazier</label>
@@ -6615,7 +6586,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>538</Id>
+    <Id>536</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ThroneBuilding</defName>
     <label>Meditation Throne</label>
@@ -6625,7 +6596,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>539</Id>
+    <Id>537</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GrandThroneBuilding</defName>
     <label>Grand Meditation Throne</label>
@@ -6635,7 +6606,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>540</Id>
+    <Id>538</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ShipLandingBeaconBuilding</defName>
     <label>Ship Landing Beacon</label>
@@ -6647,7 +6618,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>541</Id>
+    <Id>539</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HarpBuilding</defName>
     <label>Harp</label>
@@ -6657,7 +6628,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>542</Id>
+    <Id>540</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HarpsichordBuilding</defName>
     <label>Harpsichord</label>
@@ -6667,7 +6638,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>543</Id>
+    <Id>541</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PianoBuilding</defName>
     <label>Piano</label>
@@ -6679,7 +6650,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>544</Id>
+    <Id>542</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BiosculpterPodBuilding</defName>
     <label>Biosculpter Pod</label>
@@ -6692,7 +6663,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>545</Id>
+    <Id>543</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ReliquaryBuilding</defName>
     <label>Reliquary</label>
@@ -6702,7 +6673,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>546</Id>
+    <Id>544</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>StylingStationBuilding</defName>
     <label>Styling Station</label>
@@ -6714,7 +6685,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>547</Id>
+    <Id>545</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>LightBallBuilding</defName>
     <label>Lightball</label>
@@ -6726,7 +6697,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>548</Id>
+    <Id>546</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>LoudspeakerBuilding</defName>
     <label>Loudspeaker</label>
@@ -6738,7 +6709,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>549</Id>
+    <Id>547</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PlantPot_BonsaiBuilding</defName>
     <label>Bonsai Pot</label>
@@ -6748,7 +6719,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>550</Id>
+    <Id>548</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DeathrestCasketBuilding</defName>
     <label>Deathrest Casket</label>
@@ -6761,7 +6732,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>551</Id>
+    <Id>549</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HemopumpBuilding</defName>
     <label>Hemopump</label>
@@ -6774,7 +6745,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>552</Id>
+    <Id>550</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HemogenAmplifierBuilding</defName>
     <label>Hemogen Amplifier</label>
@@ -6787,7 +6758,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>553</Id>
+    <Id>551</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GlucosoidPumpBuilding</defName>
     <label>Glucosoid Pump</label>
@@ -6800,7 +6771,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>554</Id>
+    <Id>552</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PsychofluidPumpBuilding</defName>
     <label>Psychofluid Pump</label>
@@ -6813,7 +6784,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>555</Id>
+    <Id>553</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>DeathrestAcceleratorBuilding</defName>
     <label>Deathrest Accelerator</label>
@@ -6826,7 +6797,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>556</Id>
+    <Id>554</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ToyBoxBuilding</defName>
     <label>Toy Box</label>
@@ -6836,7 +6807,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>557</Id>
+    <Id>555</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SchoolDeskBuilding</defName>
     <label>School Desk</label>
@@ -6846,7 +6817,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>558</Id>
+    <Id>556</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BabyDecorationBuilding</defName>
     <label>Baby Decoration</label>
@@ -6856,7 +6827,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>559</Id>
+    <Id>557</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BlackboardBuilding</defName>
     <label>Blackboard</label>
@@ -6866,7 +6837,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>560</Id>
+    <Id>558</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BandNodeBuilding</defName>
     <label>Band Node</label>
@@ -6879,7 +6850,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>561</Id>
+    <Id>559</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ToxifierGeneratorBuilding</defName>
     <label>Toxifier Generator</label>
@@ -6892,7 +6863,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>562</Id>
+    <Id>560</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GeneAssemblerBuilding</defName>
     <label>Gene Assembler</label>
@@ -6905,7 +6876,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>563</Id>
+    <Id>561</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GeneBankBuilding</defName>
     <label>Gene Bank</label>
@@ -6918,7 +6889,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>564</Id>
+    <Id>562</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GeneExtractorBuilding</defName>
     <label>Gene Extractor</label>
@@ -6931,7 +6902,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>565</Id>
+    <Id>563</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GrowthVatBuilding</defName>
     <label>Growth Vat</label>
@@ -6944,7 +6915,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>566</Id>
+    <Id>564</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BurnoutMechlinkBoosterBuilding</defName>
     <label>Mechband Antenna</label>
@@ -6957,7 +6928,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>567</Id>
+    <Id>565</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>MechbandDishBuilding</defName>
     <label>Mechband Dish</label>
@@ -6971,7 +6942,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>568</Id>
+    <Id>566</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PollutionPumpBuilding</defName>
     <label>Pollution Pump</label>
@@ -6983,7 +6954,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>569</Id>
+    <Id>567</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GeneProcessorBuilding</defName>
     <label>Gene Processor</label>
@@ -6996,7 +6967,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>570</Id>
+    <Id>568</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>MechBoosterBuilding</defName>
     <label>Mech Booster</label>
@@ -7009,7 +6980,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>571</Id>
+    <Id>569</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_ToxGasBuilding</defName>
     <label>IED Tox Trap</label>
@@ -7022,7 +6993,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>572</Id>
+    <Id>570</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>MechGestatorBuilding</defName>
     <label>Mech Gestator</label>
@@ -7035,7 +7006,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>573</Id>
+    <Id>571</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>LargeMechGestatorBuilding</defName>
     <label>Large Mech Gestator</label>
@@ -7048,7 +7019,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>574</Id>
+    <Id>572</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SubcoreEncoderBuilding</defName>
     <label>Subcore Encoder</label>
@@ -7061,7 +7032,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>575</Id>
+    <Id>573</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SubcoreSoftscannerBuilding</defName>
     <label>Subcore Softscanner</label>
@@ -7074,7 +7045,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>576</Id>
+    <Id>574</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SubcoreRipscannerBuilding</defName>
     <label>Subcore Ripscanner</label>
@@ -7087,7 +7058,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>577</Id>
+    <Id>575</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BasicRechargerBuilding</defName>
     <label>Mech Recharger</label>
@@ -7100,7 +7071,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>578</Id>
+    <Id>576</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>StandardRechargerBuilding</defName>
     <label>Large Mech Recharger</label>
@@ -7113,7 +7084,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>579</Id>
+    <Id>577</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HoldingPlatformBuilding</defName>
     <label>Holding Platform</label>
@@ -7125,7 +7096,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>580</Id>
+    <Id>578</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectricInhibitorBuilding</defName>
     <label>Electric Inhibitor</label>
@@ -7138,7 +7109,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>581</Id>
+    <Id>579</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ShardInhibitorBuilding</defName>
     <label>Shard Inhibitor</label>
@@ -7150,7 +7121,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>582</Id>
+    <Id>580</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ProximityDetectorBuilding</defName>
     <label>Proximity Detector</label>
@@ -7162,7 +7133,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>583</Id>
+    <Id>581</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>AtmosphericHeaterBuilding</defName>
     <label>Atmospheric Heater</label>
@@ -7175,7 +7146,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>584</Id>
+    <Id>582</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>FrenzyInducerBuilding</defName>
     <label>Frenzy Inducer</label>
@@ -7185,7 +7156,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>585</Id>
+    <Id>583</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SleepSuppressorBuilding</defName>
     <label>Sleep Suppressor</label>
@@ -7197,7 +7168,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>586</Id>
+    <Id>584</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>TrapIED_DeadlifeBuilding</defName>
     <label>IED Deadlife Trap</label>
@@ -7210,7 +7181,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>587</Id>
+    <Id>585</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BioferriteGeneratorBuilding</defName>
     <label>Bioferrite Generator</label>
@@ -7223,7 +7194,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>588</Id>
+    <Id>586</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ElectroharvesterBuilding</defName>
     <label>Electroharvester</label>
@@ -7236,7 +7207,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>589</Id>
+    <Id>587</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BioferriteShaperBuilding</defName>
     <label>Bioferrite Shaper</label>
@@ -7249,7 +7220,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>590</Id>
+    <Id>588</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SerumCentrifugeBuilding</defName>
     <label>Serum Lab</label>
@@ -7262,7 +7233,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>591</Id>
+    <Id>589</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>BioferriteHarvesterBuilding</defName>
     <label>Bioferrite Harvester</label>
@@ -7275,7 +7246,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>592</Id>
+    <Id>590</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PsychicRitualSpotBuilding</defName>
     <label>Psychic Ritual Spot</label>
@@ -7285,7 +7256,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>593</Id>
+    <Id>591</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ShardBeaconBuilding</defName>
     <label>Shard Beacon</label>
@@ -7295,7 +7266,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>594</Id>
+    <Id>592</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>Building_OutfitStandBuilding</defName>
     <label>Outfit Stand</label>
@@ -7305,7 +7276,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>595</Id>
+    <Id>593</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GravshipHullBuilding</defName>
     <label>Gravship Hull</label>
@@ -7315,7 +7286,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>596</Id>
+    <Id>594</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>PilotConsoleBuilding</defName>
     <label>Pilot Console</label>
@@ -7328,7 +7299,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>597</Id>
+    <Id>595</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>ChemfuelTankBuilding</defName>
     <label>Small Chemfuel Tank</label>
@@ -7340,7 +7311,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>598</Id>
+    <Id>596</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>LargeChemfuelTankBuilding</defName>
     <label>Large Chemfuel Tank</label>
@@ -7352,7 +7323,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>599</Id>
+    <Id>597</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>SmallThrusterBuilding</defName>
     <label>Small Thruster</label>
@@ -7365,7 +7336,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>600</Id>
+    <Id>598</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>LargeThrusterBuilding</defName>
     <label>Large Thruster</label>
@@ -7379,7 +7350,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>601</Id>
+    <Id>599</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>GravAnchorBuilding</defName>
     <label>Grav Anchor</label>
@@ -7393,7 +7364,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>602</Id>
+    <Id>600</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>OrbitalScannerBuilding</defName>
     <label>Orbital Scanner</label>
@@ -7407,7 +7378,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>603</Id>
+    <Id>601</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>VacBarrierBuilding</defName>
     <label>Vac Barrier</label>
@@ -7421,7 +7392,7 @@
     </Prerequisites>
   </RimWorldArchipelago.ArchipelagoItemDef>
   <RimWorldArchipelago.ArchipelagoItemDef>
-    <Id>604</Id>
+    <Id>602</Id>
     <DefType>BuildingThingDef</DefType>
     <defName>HunterDroneTrapBuilding</defName>
     <label>Hunter Trap</label>
