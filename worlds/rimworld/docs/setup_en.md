@@ -48,6 +48,6 @@ This mod has been designed to attempt to support future expansions as well as mo
 5. Send the ArchipelagoItemDefs.xml file to all Rimworld players in this multiworld.
 6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/Defs`) - it will overwrite the existing xml file.
 7. Open the apworld file (it's a zip file - it can be opened with anything that can open a zip file.)
-8. Replace the `ArchipelagoItemDefs.xml` in the apworld with the new xml file.
+8. Replace the `ArchipelagoItemDefs.xml` in the apworld with the new xml file.  Whoever generates the multiworld must replace this file as well, otherwise modded items and research will not appear in the multiworld as checks.
 9. If multiple people in the same multiworld are using different sets of mods, each player must exclude the items from the other mods from their yamls. (Soon, there will be a way to do this directly. As a workaround, you should be able to exclude the locations and items from other mods - you'll have to go digging through `ArchipelagoItemDefs.xml` to find them - it should include the source mod for all items.)
 10. Cross your fingers and generate as normal! If it all works and we ever meet in person, you now owe me a drink. Enjoy whatever madness you have cooked up. Also, and I hope nobody has to hear this, but just in case... research and item names will be visible to other players.
