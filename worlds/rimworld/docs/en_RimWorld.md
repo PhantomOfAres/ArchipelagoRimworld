@@ -11,7 +11,7 @@ There are several types of item in RimWorld:
 * Boons (Coming soon...)
     * All of the fun helpful stuff people can send you!
     * Colonists - DONE
-    * Item drops
+    * Item drops - DONE
     * Merchants
     * And more!
 * Traps (Coming soon...)
@@ -36,10 +36,9 @@ Locations in RimWorld are all tasks to be accomplished. They come in several for
     * Trophies for all of the different types of enemy in the game
 * Quests (Coming soon...)
     * Quest rewards that send location checks, as alternate choices to the vanilla quest rewards
-* Trade (Coming soon...)
+* Trade
     * Traveling traders and merchants at other settlements will sell items that can send locations - DONE
 
 
 ## What is the goal of this game when randomized?
-The goal is configurable to be any of the vanilla win conditions in the game.
-(Coming soon...) For shorter multiworlds, a new McGuffin collection win condition to help allow RimWorld to better integrate into shorter games. Also, an option to enable the last stand for the new win condition, or to disable/reduce it for the vanilla ones.
+The goal is configurable to be any of the vanilla win conditions in the game. The mod also adds a "Monument" win condition, which requires the player to collect some number of sculptures and put them in a room with a randomized set of other buildings. You might need a room with a pilot console and a mech charger, or a meditation throne and a dresser. It's all random (and configurable)!

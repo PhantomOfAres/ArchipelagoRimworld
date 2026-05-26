@@ -167,7 +167,7 @@ class RoyaltyEnabled(Choice):
     display_name = "Royalty Enabled"
     option_disabled = 0
     option_enabled = 1
-    default = 1
+    default = 0
 
 class IdeologyEnabled(Choice):
     """
@@ -176,7 +176,7 @@ class IdeologyEnabled(Choice):
     display_name = "Ideology Enabled"
     option_disabled = 0
     option_enabled = 1
-    default = 1
+    default = 0
 
 class BiotechEnabled(Choice):
     """
@@ -185,7 +185,7 @@ class BiotechEnabled(Choice):
     display_name = "Biotech Enabled"
     option_disabled = 0
     option_enabled = 1
-    default = 1
+    default = 0
 
 class AnomalyEnabled(Choice):
     """
@@ -194,7 +194,7 @@ class AnomalyEnabled(Choice):
     display_name = "Anomoly Enabled"
     option_disabled = 0
     option_enabled = 1
-    default = 1
+    default = 0
 
 class OdysseyEnabled(Choice):
     """

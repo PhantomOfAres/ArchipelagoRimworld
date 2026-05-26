@@ -4,7 +4,7 @@
 * Latest release of [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases).
 * The `rimworld.apworld` from the latest [Archipelago RimWorld](https://github.com/PhantomOfAres/ArchipelagoRimworld/releases) release.
 * The `Harmony` mod, which can be downloaded from the workshop [here](https://steamcommunity.com/workshop/filedetails/?id=2009463077)
-* The `RimworldArchipelagoClient<version>.zip` mod file from the [Rimworld Archipelago Client](https://github.com/PhantomOfAres/RimworldArchipelagoClient)
+* The `RimworldArchipelagoClient<version>.zip` mod file from the [Rimworld Archipelago Client](https://github.com/PhantomOfAres/RimworldArchipelagoClient/releases)
     * Workshop support coming soon!
 * A legal copy of RimWorld, on version 1.6 or later.
     * Only tested on Steam version.
@@ -44,7 +44,7 @@ This mod has been designed to attempt to support future expansions as well as mo
 1. Set up a client with all the mods that will be used **by all RimWorld players** in the multiworld you're targeting. (If player A is using Vanilla Genetics Expanded and player B is using Dub's Bad Hygiene, the person doing setup needs both to perform this setup.)
 2. Open RimWorld, and DO NOT connect to an Archipelago server
 3. Open Options -> Mod options -> Archipelago
-4. Click the `Extract Ap Data` button. This wil export all of the game's data into a format that both the generator/server and the client can read. It will be saved in the user's Documents folder (note that modernly, there are two Documents folders, one connected to OneDrive, and one local - it's in the local one.)
+4. Click the `Extract Ap Data` button. This wil export all of the game's data into a format that both the generator/server and the client can read. It will be saved in the user's AppData folder for RimWorld - the location will be printed, and there should be an "Open Folder" button to go directly there.
 5. Send the ArchipelagoItemDefs.xml file to all Rimworld players in this multiworld.
 6. All players must put this ArchipelagoItemDefs.xml file in their mod folder (`Rimworld/Mods/RimworldArchipelago/Defs`) - it will overwrite the existing xml file.
 7. Open the apworld file (it's a zip file - it can be opened with anything that can open a zip file.)
