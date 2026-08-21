@@ -40,6 +40,27 @@ class ResearchBaseCost(Range):
     range_end = 8000
     default = 500
 
+class ResearchCostVariance(Range):
+    """
+    The max amount research points will vary by for research locations.
+    If the base cost is 500 and the variance is 800, every research will cost between 500 and 1300 points.
+    """
+    display_name = "Research Cost Variance"
+    range_start = 0
+    range_end = 8000
+    default = 1000
+
+class ResearchCostIncreasePerTier(Range):
+    """
+    The amount of points that will increase per research tier.
+    For example, if the base cost is 500, the variance is 800, and the Increase Per Tier is 100, a third-tier (third column) research will be
+    between 700 and 1500 points.
+    """
+    display_name = "Research Cost Increase Per Tier"
+    range_start = 0
+    range_end = 8000
+    default = 100
+
 class ResearchMaxPrerequisites(Range):
     """
     The max number of prerequisites for the generated Archipelago research. The higher this is, the more restricted your selection of research will be.
@@ -303,6 +324,8 @@ class RimworldOptions(PerGameCommonOptions):
     HiTechResearchLocationCount: HiTechResearchLocationCount
     MultiAnalyzerResearchLocationCount: MultiAnalyzerResearchLocationCount
     ResearchBaseCost: ResearchBaseCost
+    ResearchCostVariance: ResearchCostVariance
+    ResearchCostIncreasePerTier: ResearchCostIncreasePerTier
     ResearchMaxPrerequisites: ResearchMaxPrerequisites
     CraftLocationCount: CraftLocationCount
     RaidLocationCount: RaidLocationCount
@@ -338,10 +361,10 @@ rimworld_options: typing.Dict[str, type(Option)] = {
         option.__name__: option
         for option in {
             BasicResearchLocationCount, HiTechResearchLocationCount, MultiAnalyzerResearchLocationCount,
-            ResearchBaseCost, ResearchMaxPrerequisites, CraftLocationCount, RaidLocationCount, TradeLocationCount,
-            PlayerNamesAsColonistItems, VictoryCondition, RoyaltyEnabled, IdeologyEnabled, BiotechEnabled,
-            AnomalyEnabled, OdysseyEnabled, StartingResearchLevel, BonusResearchItems, ResearchScoutType,
-            ResearchScoutSecretTraps
+            ResearchBaseCost, ResearchCostVariance, ResearchCostIncreasePerTier, ResearchMaxPrerequisites, CraftLocationCount,
+            RaidLocationCount, TradeLocationCount, PlayerNamesAsColonistItems, VictoryCondition, RoyaltyEnabled,
+            IdeologyEnabled, BiotechEnabled, AnomalyEnabled, OdysseyEnabled, StartingResearchLevel, BonusResearchItems,
+            ResearchScoutType, ResearchScoutSecretTraps
         }
     }
 }
