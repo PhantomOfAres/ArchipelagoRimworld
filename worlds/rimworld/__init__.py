@@ -10,10 +10,10 @@ from typing import Any, Dict
 from .Options import RimworldOptions, max_research_locations, rimworld_options
 from .Items import RimworldItem, any_electricity_items
 from .Locations import RimworldLocation, base_location_id, location_id_gap, generic_victory_requirements, ship_launch_victory_requirements, royalty_victory_requirements, archonexus_victory_requirements, anomaly_victory_requirements, raid_tiers, simple_raid_tier_requirements, gun_raid_tier_requirements, better_gun_raid_tier_requirements, spacer_raid_tier_requirements
-from ..generic.Rules import set_rule, add_rule
 from worlds.AutoWorld import World
 from BaseClasses import LocationProgressType, Region, Location, Entrance, Item, ItemClassification
 from Options import OptionError
+from rule_builder.rules import Has, HasAny
 
 logger = logging.getLogger("Rimworld")
 
@@ -589,62 +589,87 @@ class RimworldWorld(World):
             locationName = location.name
             if locationName in self.location_prerequisites:
                 # print("prereqs: " + locationName + ": " + str(self.location_prerequisites[locationName]))
+                rule = None
                 for req in self.location_prerequisites[locationName]:
                     if isinstance(req, list):
-                        add_rule(self.get_location(locationName),
-                            lambda state, prereq = req: state.has_any(prereq, self.player), "and")
+                        rule = HasAny(*req)
                     elif req == "AnyElectricity":
-                        add_rule(self.get_location(locationName),
-                            lambda state: state.has_any(any_electricity_items, self.player), "and")
+                        if (rule is None):
+                            rule = HasAny(*any_electricity_items)
+                        else:
+                            rule = rule & HasAny(*any_electricity_items)
                     else:
-                        add_rule(self.get_location(locationName),
-                            lambda state, prereq = req: state.has(prereq, self.player), "and")
+                        if (rule is None):
+                            rule = Has(req)
+                        else:
+                            rule = rule & Has(req)
+
+                if (rule is not None):
+                    self.set_rule(location, rule)
 
         royalty_disabled = not getattr(self.options, "RoyaltyEnabled")
         anomaly_disabled = not getattr(self.options, "AnomalyEnabled")
         self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
+        rule = None
         victoryCondition = getattr(self.options, "VictoryCondition")
         if (victoryCondition == 0 or victoryCondition == 1):
             victoryLocation = self.get_location("Space Victory")
             for victoryRequirement in generic_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                if (rule is None):
+                    rule = HasAny(*victoryRequirement)
+                else:
+                    rule = rule & HasAny(*victoryRequirement)
             for victoryRequirement in ship_launch_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                rule = rule & HasAny(*victoryRequirement)
+            self.set_rule(victoryLocation, rule)
             victoryLocation.place_locked_item(self.create_event("Victory"))
         if ((victoryCondition == 0 and not royalty_disabled) or victoryCondition == 2):
             victoryLocation = self.get_location("Royalty Victory")
             for victoryRequirement in generic_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                if (rule is None):
+                    rule = HasAny(*victoryRequirement)
+                else:
+                    rule = rule & HasAny(*victoryRequirement)
             for victoryRequirement in royalty_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                rule = rule & HasAny(*victoryRequirement)
+            self.set_rule(victoryLocation, rule)
             victoryLocation.place_locked_item(self.create_event("Victory"))
         if (victoryCondition == 3):
             victoryLocation = self.get_location("Archonexus Victory")
             for victoryRequirement in generic_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                if (rule is None):
+                    rule = HasAny(*victoryRequirement)
+                else:
+                    rule = rule & HasAny(*victoryRequirement)
             for victoryRequirement in archonexus_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                rule = rule & HasAny(*victoryRequirement)
+            self.set_rule(victoryLocation, rule)
             victoryLocation.place_locked_item(self.create_event("Victory"))
         if ((victoryCondition == 0 and not anomaly_disabled) or victoryCondition == 4):
             victoryLocation = self.get_location("Anomaly Victory")
             for victoryRequirement in generic_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                if (rule is None):
+                    rule = HasAny(*victoryRequirement)
+                else:
+                    rule = rule & HasAny(*victoryRequirement)
             for victoryRequirement in anomaly_victory_requirements:
-                add_rule(victoryLocation, lambda state, req = victoryRequirement: state.has_any(req, self.player), "and")
+                rule = rule & HasAny(*victoryRequirement)
+            self.set_rule(victoryLocation, rule)
             victoryLocation.place_locked_item(self.create_event("Victory"))
         if (victoryCondition == 5):
             victoryLocation = self.get_location("Monument Victory")
             statueCount = getattr(self.options, "MonumentStatueCount").value
-            add_rule(victoryLocation, lambda state, player = self.player, statCount = statueCount: state.has("Archipelago Sculpture", player, statCount), "and")
+            rule = Has("Archipelago Sculpture", statueCount)
             for buildingName in self.monument_data["MonumentBuildings"].keys():
                 if buildingName == "SculptureArchipelago":
                     continue
 
                 for prereq in self.building_name_to_prereqs[buildingName]:
                     if prereq == "AnyElectricity":
-                        add_rule(victoryLocation, lambda state: state.has_any(any_electricity_items, self.player), "and")
+                        rule = rule & HasAny(*any_electricity_items)
                     else:
-                        add_rule(victoryLocation, lambda state, req = prereq: state.has(req, self.player), "and")
+                        rule = rule & Has(prereq)
+            self.set_rule(victoryLocation, rule)
             victoryLocation.place_locked_item(self.create_event("Victory"))
 
     def write_spoiler_header(self, spoiler_handle: typing.TextIO) -> None:
