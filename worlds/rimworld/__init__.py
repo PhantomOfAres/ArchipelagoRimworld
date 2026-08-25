@@ -192,6 +192,7 @@ class RimworldWorld(World):
                 if "Rimworld" in self.multiworld.re_gen_passthrough:
                     slot_data = self.multiworld.re_gen_passthrough["Rimworld"]
                     self.location_prerequisites = slot_data["location_prerequisites"]
+                    self.craft_location_recipes = slot_data["craft_recipes"]
                     self.options.RoyaltyEnabled = slot_data["options"]["RoyaltyEnabled"]
                     self.options.IdeologyEnabled = slot_data["options"]["IdeologyEnabled"]
                     self.options.AnomalyEnabled = slot_data["options"]["AnomalyEnabled"]
@@ -347,36 +348,36 @@ class RimworldWorld(World):
                 item_weights[itemId] = anomaly_weight
             total_weight += item_weights[itemId]
 
-        self.craft_location_recipes = {}
         for i in range(craftLocationCount):
             locationName = "Craft Location " + str(i)
             locationId = self.location_name_to_id[locationName]
 
-            randomWeight = self.random.randrange(total_weight)
-            for itemId in item_weights:
-                if randomWeight < item_weights[itemId]:
-                    itemId1 = itemId
-                    itemName1 = self.craftable_item_id_to_name[itemId]
-                    break
-                else:
-                    randomWeight -= item_weights[itemId]
+            if (str(locationId) not in self.craft_location_recipes):
+                randomWeight = self.random.randrange(total_weight)
+                for itemId in item_weights:
+                    if randomWeight < item_weights[itemId]:
+                        itemId1 = itemId
+                        itemName1 = self.craftable_item_id_to_name[itemId]
+                        break
+                    else:
+                        randomWeight -= item_weights[itemId]
 
-            # Allows duplicate items - maybe fix it? Maybe who cares?
-            randomWeight = self.random.randrange(total_weight)
-            for itemId in item_weights:
-                if randomWeight < item_weights[itemId]:
-                    itemId2 = itemId
-                    itemName2 = self.craftable_item_id_to_name[itemId]
-                    break
-                else:
-                    randomWeight -= item_weights[itemId]
+                # Allows duplicate items - maybe fix it? Maybe who cares?
+                randomWeight = self.random.randrange(total_weight)
+                for itemId in item_weights:
+                    if randomWeight < item_weights[itemId]:
+                        itemId2 = itemId
+                        itemName2 = self.craftable_item_id_to_name[itemId]
+                        break
+                    else:
+                        randomWeight -= item_weights[itemId]
 
-            prerequisites = list(set(self.craftable_item_id_to_prereqs[itemId1]) | set(self.craftable_item_id_to_prereqs[itemId2]))
-            for item in prerequisites:
-                self.progression_items.add(item)
-            self.location_prerequisites[locationName] = prerequisites
-            self.craft_location_recipes[locationId] = [itemName1, itemName2]
-            # print(self.player_name + "'s " + locationName + ": " + itemName1 + " + " + itemName2 + "(" + str(prerequisites) + ")")
+                prerequisites = list(set(self.craftable_item_id_to_prereqs[itemId1]) | set(self.craftable_item_id_to_prereqs[itemId2]))
+                for item in prerequisites:
+                    self.progression_items.add(item)
+                self.location_prerequisites[locationName] = prerequisites
+                self.craft_location_recipes[locationId] = [itemName1, itemName2]
+
             location_pool[locationName] = locationId
 
         prerequisites = []
