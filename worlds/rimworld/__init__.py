@@ -3,6 +3,8 @@
 import logging
 import pkgutil
 import random
+from hashlib import sha256
+
 import settings
 import typing
 import xml.etree.ElementTree as ElementTree
@@ -48,7 +50,9 @@ class RimworldWorld(World):
 
     max_item_id = 0
 
-    item_root = ElementTree.fromstring(pkgutil.get_data(__name__,"ArchipelagoItemDefs.xml"));
+    item_defs = pkgutil.get_data(__name__,"ArchipelagoItemDefs.xml")
+    item_def_sha = sha256(item_defs).hexdigest()
+    item_root = ElementTree.fromstring(item_defs);
 
     for item in item_root:
         itemName = item.find("label").text
@@ -223,6 +227,8 @@ class RimworldWorld(World):
         slot_data = {}
 
         slot_data["seed"] = self.multiworld.seed_name
+        slot_data["item_def_sha"] = self.item_def_sha
+        slot_data["apworld_version"] = self.world_version.as_simple_string()
         options = slot_data["options"] = {}
         for option_name in rimworld_options:
             option = getattr(self.options, option_name)
