@@ -48,6 +48,10 @@ class RimworldWorld(World):
 
     building_name_to_prereqs = {}
 
+    raid_incidents = []
+    positive_incidents = []
+    negative_incidents = []
+
     max_item_id = 0
 
     item_defs = pkgutil.get_data(__name__,"ArchipelagoItemDefs.xml")
@@ -65,6 +69,15 @@ class RimworldWorld(World):
 
         if (defType == "ResearchProjectDef" or defType == "IncidentDef"):
             item_name_to_id[itemName] = int(itemId)
+            incidentTags = item.find("Tags")
+            if incidentTags is not None:
+                for incidentTag in incidentTags:
+                    if incidentTag.text == "Positive":
+                        positive_incidents.append(itemName)
+                    if incidentTag.text == "Negative":
+                        negative_incidents.append(itemName)
+                    if incidentTag.text == "ThreatBig":
+                        raid_incidents.append(itemName)
 
         if (defType == "ResearchProjectDef"):
             research_items[itemName] = int(itemId)
@@ -529,11 +542,31 @@ class RimworldWorld(World):
         for i in range(colonistItems):
             self.item_counts += 1
             itempool.append(self.create_item("Colonist", ItemClassification.useful))
-        
+
+        raid_items = []
+        for item in self.raid_incidents:
+            if royalty_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Royalty":
+                continue
+            if ideology_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Ideology":
+                continue
+            if biotech_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Biotech":
+                continue
+            if anomaly_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Anomaly":
+                continue
+            if odyssey_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Odyssey":
+                continue
+
+            raid_items.append(item)
+
         guaranteedTrapCount = getattr(self.options, "RaidTrapCount")
         for i in range(guaranteedTrapCount):
             self.item_counts += 1
-            itempool.append(self.create_item("Enemy Raid", ItemClassification.trap))
+            # Flip a coin - if it's heads, enemy raid, otherwise, pick at random.
+            if self.random.randrange(2) == 0:
+                itempool.append(self.create_item("Enemy Raid", ItemClassification.trap))
+            else:
+                self.random.shuffle(raid_items)
+                itempool.append(self.create_item(raid_items[0], ItemClassification.trap))
 
         self.multiworld.itempool += itempool
 
@@ -562,6 +595,20 @@ class RimworldWorld(World):
                     continue
                 possiblePositiveItems.append(fillerName)
 
+            for item in self.negative_incidents:
+                if royalty_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Royalty":
+                    continue
+                if ideology_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Ideology":
+                    continue
+                if biotech_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Biotech":
+                    continue
+                if anomaly_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Anomaly":
+                    continue
+                if odyssey_disabled and self.item_name_to_expansion[item] == "Ludeon.RimWorld.Odyssey":
+                    continue
+
+                possibleNegativeItems.append(item)
+
             # Eventually, make this realerer
             possiblePositiveItems.append("Ship Chunk Drop")
             possibleNegativeItems.append("Enemy Raid")
@@ -569,8 +616,13 @@ class RimworldWorld(World):
             while self.item_counts < self.location_counts:
                 self.item_counts += 1
                 if self.random.randrange(100) < trapRandomChance:
-                    fillerIndex = self.random.randrange(len(possibleNegativeItems))
-                    self.multiworld.itempool.append(self.create_item(possibleNegativeItems[fillerIndex], ItemClassification.trap))
+                    # Flip a coin - if it's heads, enemy raid, otherwise, pick at random.
+                    if self.random.randrange(2) == 0:
+                        fillerName = "Enemy Raid"
+                    else:
+                        fillerIndex = self.random.randrange(len(possibleNegativeItems))
+                        fillerName = possibleNegativeItems[fillerIndex]
+                    self.multiworld.itempool.append(self.create_item(fillerName, ItemClassification.trap))
                 else:
                     fillerIndex = self.random.randrange(len(possiblePositiveItems))
                     self.multiworld.itempool.append(self.create_item(possiblePositiveItems[fillerIndex], ItemClassification.filler))
