@@ -11,7 +11,11 @@ import xml.etree.ElementTree as ElementTree
 from typing import Any, Dict
 from .Options import RimworldOptions, max_research_locations, rimworld_options
 from .Items import RimworldItem, any_electricity_items
-from .Locations import RimworldLocation, base_location_id, location_id_gap, generic_victory_requirements, ship_launch_victory_requirements, royalty_victory_requirements, archonexus_victory_requirements, anomaly_victory_requirements, raid_tiers, simple_raid_tier_requirements, gun_raid_tier_requirements, better_gun_raid_tier_requirements, spacer_raid_tier_requirements
+from .Locations import RimworldLocation, base_location_id, location_id_gap, generic_victory_requirements, \
+    ship_launch_victory_requirements, royalty_victory_requirements, archonexus_victory_requirements, \
+    anomaly_victory_requirements, raid_tiers, simple_raid_tier_requirements, gun_raid_tier_requirements, \
+    better_gun_raid_tier_requirements, spacer_raid_tier_requirements, first_trade_tier_requirements, \
+    second_trade_tier_requirements, third_trade_tier_requirements, trade_tiers
 from worlds.AutoWorld import World
 from BaseClasses import LocationProgressType, Region, Location, Entrance, Item, ItemClassification
 from Options import OptionError
@@ -413,10 +417,24 @@ class RimworldWorld(World):
                 prerequisites.extend(spacer_raid_tier_requirements)
             self.location_prerequisites[locationName] = prerequisites.copy()
 
+        for item in prerequisites:
+            if item is str:
+                self.progression_items.add(item)
+            else:
+                for subitem in item:
+                    self.progression_items.add(subitem)
+
+        prerequisites = []
+        prerequisites.extend(first_trade_tier_requirements)
         for i in range(tradeLocationCount):
             locationName = "Trade Location " + str(i)
             locationId = self.location_name_to_id[locationName]
             location_pool[locationName] = locationId
+            if i == (tradeLocationCount // trade_tiers):
+                prerequisites.extend(second_trade_tier_requirements)
+            if i == (tradeLocationCount // trade_tiers) * 2:
+                prerequisites.extend(third_trade_tier_requirements)
+            self.location_prerequisites[locationName] = prerequisites.copy()
 
         for item in prerequisites:
             if item is str:

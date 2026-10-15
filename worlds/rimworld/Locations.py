@@ -39,5 +39,10 @@ better_gun_raid_tier_requirements = [["Precision Rifling", "Multibarrel Weapons"
 spacer_raid_tier_requirements = ["Fabrication", "Advanced Fabrication",
                                     ["Recon Armor", "Marine Armor", "Cataphract Armor", "High Mechtech", "Ultra Mechtech"]]
 
+trade_tiers = 3
+first_trade_tier_requirements = ["Stonecutting", "Complex Furniture"]
+second_trade_tier_requirements = ["Drug Production", "AnyElectricity"]
+third_trade_tier_requirements = ["Fabrication", "Advanced Fabrication"]
+
 class RimworldLocation(Location):
     game: str = "Rimworld"
