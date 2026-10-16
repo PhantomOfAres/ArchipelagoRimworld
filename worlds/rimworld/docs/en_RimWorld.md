@@ -8,13 +8,12 @@ There are several types of item in RimWorld:
 * Research
     * Each research item will automatically grant that technology to the player
     * Research is also the primary progression in the game - you need certain tech to complete your victory condition, and crafting items will also require their requisite research.
-* Boons (Coming soon...)
+* Boons
     * All of the fun helpful stuff people can send you!
-    * Colonists - DONE
-    * Item drops - DONE
-    * Merchants
-    * And more!
-* Traps (Coming soon...)
+    * Colonists
+    * Item drops
+    * Ship Chunks
+* Traps
     * All the fun bad stuff people can send you! 
     * Raids - DONE
     * Scaria
@@ -31,13 +30,12 @@ Locations in RimWorld are all tasks to be accomplished. They come in several for
     * Currently, all research is automatically hinted (coming soon: Yaml configuration)
 * Crafting
     * The Archipelago Grinder is a new building in the Production tab. It will request pairs of items that the player can craft. Send the two requested items to the grinder, and it will send the location.
-* Combat (Coming soon...)
-    * Defeat raiders to obtain items that can be consumed to complete a location - DONE
-    * Trophies for all of the different types of enemy in the game
-* Quests (Coming soon...)
-    * Quest rewards that send location checks, as alternate choices to the vanilla quest rewards
+* Combat
+    * Defeat raiders to obtain items that can be consumed to complete a location
+* Quests
+    * Quest rewards that send location checks, in addition to the vanilla quest rewards
 * Trade
-    * Traveling traders and merchants at other settlements will sell items that can send locations - DONE
+    * Traveling traders and merchants at other settlements will sell items that can send locations
 
 
 ## What is the goal of this game when randomized?
