@@ -162,6 +162,12 @@ class RimworldWorld(World):
         locationId = i + baseLocationId
         location_name_to_id[locationName] = locationId
 
+    baseLocationId = baseLocationId + location_id_gap
+    for i in range(max_research_locations):
+        locationName = "Quest Location " + str(i)
+        locationId = i + baseLocationId
+        location_name_to_id[locationName] = locationId
+
 
     baseLocationId = baseLocationId + location_id_gap
     locationName = "Space Victory"
@@ -226,6 +232,7 @@ class RimworldWorld(World):
                     self.options.CraftLocationCount.value = slot_data["options"]["CraftLocationCount"]
                     self.options.RaidLocationCount.value = slot_data["options"]["RaidLocationCount"]
                     self.options.TradeLocationCount.value = slot_data["options"]["TradeLocationCount"]
+                    self.options.QuestLocationCount.value = slot_data["options"]["QuestLocationCount"]
 
                     if (len(slot_data["craft_recipes"]) > 0):
                         for locId, ingredients in slot_data["craft_recipes"].items():
@@ -313,6 +320,7 @@ class RimworldWorld(World):
         craftLocationCount = getattr(self.options, "CraftLocationCount").value
         raidLocationCount = getattr(self.options, "RaidLocationCount").value
         tradeLocationCount = getattr(self.options, "TradeLocationCount").value
+        questLocationCount = getattr(self.options, "QuestLocationCount").value
         royalty_disabled = not getattr(self.options, "RoyaltyEnabled")
         ideology_disabled = not getattr(self.options, "IdeologyEnabled")
         biotech_disabled = not getattr(self.options, "BiotechEnabled")
@@ -424,13 +432,38 @@ class RimworldWorld(World):
                 for subitem in item:
                     self.progression_items.add(subitem)
 
+        # Use raid logic for quests, since they're similarly "fighty"
         prerequisites = []
-        prerequisites.extend(first_trade_tier_requirements)
+        prerequisites.extend(simple_raid_tier_requirements)
+        for i in range(questLocationCount):
+            locationName = "Quest Location " + str(i)
+            locationId = self.location_name_to_id[locationName]
+            location_pool[locationName] = locationId
+            if i == (questLocationCount // raid_tiers):
+                prerequisites.extend(gun_raid_tier_requirements)
+            if i == (questLocationCount // raid_tiers) * 2:
+                prerequisites.extend(better_gun_raid_tier_requirements)
+            if i == (questLocationCount // raid_tiers) * 3:
+                prerequisites.extend(spacer_raid_tier_requirements)
+
+            print(locationName + ", " + str(prerequisites))
+            self.location_prerequisites[locationName] = prerequisites.copy()
+
+        for item in prerequisites:
+            if item is str:
+                self.progression_items.add(item)
+            else:
+                for subitem in item:
+                    self.progression_items.add(subitem)
+
+        prerequisites = []
         for i in range(tradeLocationCount):
             locationName = "Trade Location " + str(i)
             locationId = self.location_name_to_id[locationName]
             location_pool[locationName] = locationId
             if i == (tradeLocationCount // trade_tiers):
+                prerequisites.extend(first_trade_tier_requirements)
+            if i == (tradeLocationCount // trade_tiers) * 2:
                 prerequisites.extend(second_trade_tier_requirements)
             if i == (tradeLocationCount // trade_tiers) * 2:
                 prerequisites.extend(third_trade_tier_requirements)
@@ -669,7 +702,10 @@ class RimworldWorld(World):
                 rule = None
                 for req in self.location_prerequisites[locationName]:
                     if isinstance(req, list):
-                        rule = HasAny(*req)
+                        if (rule is None):
+                            rule = HasAny(*req)
+                        else:
+                            rule = rule & HasAny(*req)
                     elif req == "AnyElectricity":
                         if (rule is None):
                             rule = HasAny(*any_electricity_items)

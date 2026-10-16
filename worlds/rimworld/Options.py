@@ -85,7 +85,7 @@ class RaidLocationCount(Range):
     """
     display_name = "Raid Location Count"
     range_start = 0
-    range_end = max_research_locations * 2
+    range_end = 50
     default = 10
 
 class TradeLocationCount(Range):
@@ -94,8 +94,17 @@ class TradeLocationCount(Range):
     """
     display_name = "Trade Location Count"
     range_start = 0
-    range_end = max_research_locations
+    range_end = 50
     default = 10
+
+class QuestLocationCount(Range):
+    """
+    The number of quest locations in the game. These locations require completing a quest for a location item.
+    """
+    display_name = "Quest Location Count"
+    range_start = 0
+    range_end = 30
+    default = 5
 
 class RaidTrapCount(Range):
     """
@@ -330,6 +339,7 @@ class RimworldOptions(PerGameCommonOptions):
     CraftLocationCount: CraftLocationCount
     RaidLocationCount: RaidLocationCount
     TradeLocationCount: TradeLocationCount
+    QuestLocationCount: QuestLocationCount
     RaidTrapCount: RaidTrapCount
     ColonistItemCount: ColonistItemCount
     PlayerNamesAsColonistItems: PlayerNamesAsColonistItems
@@ -362,7 +372,7 @@ rimworld_options: typing.Dict[str, type(Option)] = {
         for option in {
             BasicResearchLocationCount, HiTechResearchLocationCount, MultiAnalyzerResearchLocationCount,
             ResearchBaseCost, ResearchCostVariance, ResearchCostIncreasePerTier, ResearchMaxPrerequisites, CraftLocationCount,
-            RaidLocationCount, TradeLocationCount, PlayerNamesAsColonistItems, VictoryCondition, RoyaltyEnabled,
+            RaidLocationCount, TradeLocationCount, QuestLocationCount, PlayerNamesAsColonistItems, VictoryCondition, RoyaltyEnabled,
             IdeologyEnabled, BiotechEnabled, AnomalyEnabled, OdysseyEnabled, StartingResearchLevel, BonusResearchItems,
             ResearchScoutType, ResearchScoutSecretTraps
         }
