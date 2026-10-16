@@ -1,6 +1,6 @@
 import typing
 from dataclasses import dataclass
-from Options import Option, Choice, PerGameCommonOptions, Range
+from Options import Option, Choice, PerGameCommonOptions, Range, DeathLink
 
 max_research_locations = 200
 
@@ -364,7 +364,7 @@ class RimworldOptions(PerGameCommonOptions):
     SpacerItemWeight: SpacerItemWeight
     HardToMakeItemWeight: HardToMakeItemWeight
     AnomalyItemWeight: AnomalyItemWeight
-    
+    DeathLink: DeathLink
 
 rimworld_options: typing.Dict[str, type(Option)] = {
     **{
@@ -374,7 +374,7 @@ rimworld_options: typing.Dict[str, type(Option)] = {
             ResearchBaseCost, ResearchCostVariance, ResearchCostIncreasePerTier, ResearchMaxPrerequisites, CraftLocationCount,
             RaidLocationCount, TradeLocationCount, QuestLocationCount, PlayerNamesAsColonistItems, VictoryCondition, RoyaltyEnabled,
             IdeologyEnabled, BiotechEnabled, AnomalyEnabled, OdysseyEnabled, StartingResearchLevel, BonusResearchItems,
-            ResearchScoutType, ResearchScoutSecretTraps
+            ResearchScoutType, ResearchScoutSecretTraps, DeathLink
         }
     }
 }

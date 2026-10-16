@@ -426,11 +426,11 @@ class RimworldWorld(World):
             self.location_prerequisites[locationName] = prerequisites.copy()
 
         for item in prerequisites:
-            if item is str:
-                self.progression_items.add(item)
-            else:
+            if type(item) is list:
                 for subitem in item:
                     self.progression_items.add(subitem)
+            else:
+                self.progression_items.add(item)
 
         # Use raid logic for quests, since they're similarly "fighty"
         prerequisites = []
@@ -446,15 +446,14 @@ class RimworldWorld(World):
             if i == (questLocationCount // raid_tiers) * 3:
                 prerequisites.extend(spacer_raid_tier_requirements)
 
-            print(locationName + ", " + str(prerequisites))
             self.location_prerequisites[locationName] = prerequisites.copy()
 
         for item in prerequisites:
-            if item is str:
-                self.progression_items.add(item)
-            else:
+            if type(item) is list:
                 for subitem in item:
                     self.progression_items.add(subitem)
+            else:
+                self.progression_items.add(item)
 
         prerequisites = []
         for i in range(tradeLocationCount):
@@ -470,11 +469,11 @@ class RimworldWorld(World):
             self.location_prerequisites[locationName] = prerequisites.copy()
 
         for item in prerequisites:
-            if item is str:
-                self.progression_items.add(item)
-            else:
+            if type(item) is list:
                 for subitem in item:
                     self.progression_items.add(subitem)
+            else:
+                self.progression_items.add(item)
 
         self.location_counts += len(location_pool)
         main_region.add_locations(location_pool, RimworldLocation)

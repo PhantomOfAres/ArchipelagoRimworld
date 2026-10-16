@@ -41,8 +41,8 @@ spacer_raid_tier_requirements = ["Fabrication", "Advanced Fabrication",
 
 trade_tiers = 4
 first_trade_tier_requirements = ["Stonecutting", "Complex Furniture"]
-second_trade_tier_requirements = ["Drug Production", "AnyElectricity"]
-third_trade_tier_requirements = ["Fabrication", "Advanced Fabrication"]
+second_trade_tier_requirements = ["Drug Production", "Machining", "AnyElectricity"]
+third_trade_tier_requirements = ["Microelectronics", "Fabrication", "Advanced Fabrication"]
 
 class RimworldLocation(Location):
     game: str = "Rimworld"
